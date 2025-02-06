@@ -20,38 +20,41 @@
       </div>
     </header>
 
-<!-- Home -->
-<div class="flex flex-col w-full h-screen items-center justify-center">
+    <!-- Home -->
+    <div class="flex flex-col w-full h-screen items-center justify-center">
 
-  <!-- particles.js container -->
-  <div id="particles-js" class="w-full h-full absolute"></div>
-  
-  <!-- Game's Logos -->
-  <div class="flex justify-center mb-4">
-    <img src="assets/logo_games/minecraft.jpg" alt="Minecraft Logo" class="w-8 rounded-full border-2 border-gray-400 mr-[-10px]">
-    <img src="assets/logo_games/dota.jpg" alt="Dota Logo" class="w-8 rounded-full border-2 border-gray-400 mr-[-10px]">
-    <img src="assets/logo_games/lol.jpg" alt="LoL Logo" class="w-8 rounded-full border-2 border-gray-400 mr-[-10px]">
-    <img src="assets/logo_games/pubg.jpg" alt="PUBG Logo" class="w-8 rounded-full border-2 border-gray-400 mr-[-12px]">
-    <img src="assets/logo_games/roblox.jpg" alt="Roblox Logo" class="w-8 rounded-full border-2 border-gray-400 mr-[-12px]">
-    <i class="fa-solid fa-plus w-8 rounded-full border-2 border-gray-400 flex justify-center items-center text-gray-400 bg-white"></i>
-  </div>
+      <!-- particles.js container -->
+      <div id="particles-js" class="w-full h-full absolute"></div>
+
+      <div class="flex flex-col items-center mt-12 md:flex-row-reverse gap-4 md:gap-16 sm:-mb-4 md:-mb-6 md:mt-0">
+        <!-- Game's Logos -->
+        <div class="flex justify-center">
+          <img src="assets/logo_games/minecraft.jpg" alt="Minecraft Logo" class="w-8 rounded-full border-2 border-gray-400 mr-[-10px]">
+          <img src="assets/logo_games/dota.jpg" alt="Dota Logo" class="w-8 rounded-full border-2 border-gray-400 mr-[-10px]">
+          <img src="assets/logo_games/lol.jpg" alt="LoL Logo" class="w-8 rounded-full border-2 border-gray-400 mr-[-10px]">
+          <img src="assets/logo_games/pubg.jpg" alt="PUBG Logo" class="w-8 rounded-full border-2 border-gray-400 mr-[-12px]">
+          <img src="assets/logo_games/roblox.jpg" alt="Roblox Logo" class="w-8 rounded-full border-2 border-gray-400 mr-[-12px]">
+          <i class="fa-solid fa-plus w-8 rounded-full border-2 border-gray-400 flex justify-center items-center text-gray-400 bg-white"></i>
+        </div>
+        
       
-
-      <!-- Upper Subtitle -->
-      <div class="text-[#FFA500] font-main flex justify-center items-center gap-2 font-bold text-sm">
-        <h1>Buy</h1>
-        <i class="fa-solid fa-cart-shopping"></i>
-        <h1>Sell</h1>
-        <i class="fa-solid fa-handshake"></i>
-        <h1>Trade</h1>
-        <i class="fa-solid fa-gamepad"></i>
-        <h1>Pilot</h1>
+        <!-- Upper Subtitle -->
+        <div class="text-[#FFA500] font-main flex justify-center items-center gap-2 font-bold text-sm">
+          <h1>Buy</h1>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <h1>Sell</h1>
+          <i class="fa-solid fa-handshake"></i>
+          <h1>Trade</h1>
+          <i class="fa-solid fa-gamepad"></i>
+          <h1>Pilot</h1>
+        </div>
       </div>
 
       <!-- Title -->
       <div class="relative text-white">
-        <h1 class="m-0 text-red-500 font-title text-white relative text-[2.3rem]">Plugged In</h1>
-        <span class="font-main overflow-hidden absolute bottom-0 -right-3 transform -rotate-9 text-yellow-400 text-md font-bold drop-shadow-lg animate-splash">
+        <h1 class="m-0 text-red-500 font-title text-white relative text-[2.3rem] sm:text-[4rem] md:text-[5rem] lg:text-[6rem]">Plugged In</h1>
+        <!-- floating -->
+        <span class="font-main overflow-hidden absolute bottom-0 -right-3 transform -rotate-9 text-yellow-400 text-md font-bold drop-shadow-lg animate-splash sm:bottom-3 sm:text-lg md:bottom-6 md:text-2xl">
           Elevate your Gameplay
         </span>
       </div>
@@ -77,8 +80,11 @@
         </button>
       </div>
 
-      <button class="w-[65%] h-[40px] bg-[#FFA500] rounded-2xl mt-8">Browse all products</button>
-      <button class="w-[50%] h-[40px] bg-white text-[#FFA500] font-extrabold rounded-2xl mt-4 z-1">About Us</button>
+      <div class="mt-8 flex w-full flex-col items-center justify-center md:gap-8 md:flex-row">
+        <button class="w-[65%] h-[40px] bg-[#FFA500] rounded-2xl md:w-[25%]">Browse all products</button>
+        <button class="w-[50%] h-[40px] bg-white text-[#FFA500] font-extrabold rounded-2xl z-1 mt-4 md:mt-0 md:w-[25%]">About Us</button>
+      </div>
+      
 
     </div>
 
