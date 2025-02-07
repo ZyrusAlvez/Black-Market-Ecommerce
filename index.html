@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plugged In</title>
     <link href="styles.css" rel="stylesheet" />
-
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="https://kit.fontawesome.com/d5b7a13861.js" crossorigin="anonymous"></script>
-    
   </head>
+
   <body class="w-full text-white bg-[#111] font-main">
 
     <header class="h-[70px] w-full bg-[#111] z-50 fixed flex justify-between items-center">
@@ -26,7 +25,7 @@
       <!-- particles.js container -->
       <div id="particles-js" class="w-full h-full absolute"></div>
 
-      <div class="flex flex-col items-center mt-12 md:flex-row-reverse gap-4 md:gap-16 sm:-mb-4 md:-mb-6 md:mt-0">
+      <div class="flex flex-col items-center mt-12 md:flex-row-reverse gap-4 md:gap-16 sm:-mb-4 md:mt-0">
         <!-- Game's Logos -->
         <div class="flex justify-center">
           <img src="assets/logo_games/minecraft.jpg" alt="Minecraft Logo" class="w-8 rounded-full border-2 border-gray-400 mr-[-10px]">
@@ -81,9 +80,9 @@
       </div>
 
       <div class="mt-8 flex w-full flex-col items-center justify-center md:gap-8 md:flex-row">
-        <button class="w-[65%] h-[40px] bg-[#FFA500] rounded-2xl md:w-[25%]">Browse all products</button>
-        <button class="w-[50%] h-[40px] bg-white text-[#FFA500] font-extrabold rounded-2xl z-1 mt-4 md:mt-0 md:w-[25%]">About Us</button>
-      </div>
+        <button class="cursor-pointer z-[100] w-[65%] h-[40px] bg-[#FFA500] rounded-2xl md:w-[25%]">Browse all products</button>
+        <button class="cursor-pointer w-[50%] h-[40px] bg-white text-[#FFA500] font-extrabold rounded-2xl z-1 mt-4 md:mt-0 md:w-[25%]">About Us</button>
+    </div>
       
 
     </div>
@@ -93,38 +92,212 @@
 
       <div class="flex items-center justify-center px-4">
         <h1 class="border-[#FFA500] border-b-[1px] w-full"></h1>
-        <div class="flex gap-4 mx-2">
-          <h1 class="text-6xl">Our <h1 class="text-6xl text-[#FFA500]">Products</h1></h1>
+        <div class="flex gap-2 mx-2 text-4xl sm:gap-4 sm:text-5xl md:text-6xl">
+          <h1>Our<h1 class="text-[#FFA500]">Products</h1></h1>
         </div>
         <h1 class="border-[#FFA500] border-b-[1px] w-full"></h1>
       </div>
 
       <h1 class="text-gray-500 w-full text-center mt-4">Browse our best selection and filter by game.</h1>
+      
+      <!-- Browse Products -->
+      <div class="h-[500px] w-full flex justify-center gap-4 my-8">
+        <div class="flex flex-col w-[25%] h-auto border-[#FFA500] border-[1px] rounded-2xl flex items-center gap-y-2 py-6 justify-center">
+          <div id="minecraft" class="border-[1px] border-gray-700 w-[90%] px-1 text-center sm:px-4 sm:text-start py-4 rounded-2xl cursor-pointer">Minecraft</div>
+          <div id="fortnite" class="border-[1px] border-gray-700 w-[90%] px-1 text-center sm:px-4 sm:text-start py-4 rounded-2xl cursor-pointer">Fortnite</div>
+          <div id="valorant" class="border-[1px] border-gray-700 w-[90%] px-1 text-center sm:px-4 sm:text-start py-4 rounded-2xl cursor-pointer">Valorant</div>
+          <div id="lol" class="border-[1px] border-gray-700 w-[90%] px-1 text-center sm:px-4 sm:text-start py-4 rounded-2xl cursor-pointer">League of Legends</div>
+          <div id="roblox" class="border-[1px] border-gray-700 w-[90%] px-1 text-center sm:px-4 sm:text-start py-4 rounded-2xl cursor-pointer">Roblox</div>
+          <div id="pubg" class="border-[1px] border-gray-700 w-[90%] px-1 text-center sm:px-4 sm:text-start py-4 rounded-2xl cursor-pointer">PUBG</div>
+          <div id="others" class="border-[1px] border-gray-700 w-[90%] px-1 text-center sm:px-4 sm:text-start py-4 rounded-2xl cursor-pointer">Others</div>
+        </div>
 
+        <div class="flex flex-col w-[70%] border-[#FFA500] border-[1px] rounded-2xl p-4 h-full gap-y-4 overflow-hidden overflow-y-scroll">
+          <div class="min-h-[170px] w-full border-gray-700 border-[1px] rounded-2xl">Minecraft</div>
+          <div class="min-h-[170px] w-full border-gray-700 border-[1px] rounded-2xl">Minecraft</div>
+          <div class="min-h-[170px] w-full border-gray-700 border-[1px] rounded-2xl">Minecraft</div>
+          <div class="min-h-[170px] w-full border-gray-700 border-[1px] rounded-2xl">Minecraft</div>
+          <div class="min-h-[170px] w-full border-gray-700 border-[1px] rounded-2xl">Minecraft</div>
+          <div class="min-h-[170px] w-full border-gray-700 border-[1px] rounded-2xl">Minecraft</div>
+        </div>
+
+      </div>
     </div>
 
-    <!-- Browse Products -->
-    <div class="h-[500px] w-full flex justify-center gap-4 my-8">
-      <div class="flex flex-col w-[25%] h-auto border-[#FFA500] border-[1px] rounded-2xl flex items-center gap-y-2 py-6 justify-center">
-        <div id="minecraft" class="border-[1px] border-gray-600 w-[90%] px-1 text-center sm:px-4 sm:text-start py-4 rounded-2xl cursor-pointer">Minecraft</div>
-        <div id="fortnite" class="border-[1px] border-gray-600 w-[90%] px-1 text-center sm:px-4 sm:text-start py-4 rounded-2xl cursor-pointer">Fortnite</div>
-        <div id="valorant" class="border-[1px] border-gray-600 w-[90%] px-1 text-center sm:px-4 sm:text-start py-4 rounded-2xl cursor-pointer">Valorant</div>
-        <div id="lol" class="border-[1px] border-gray-600 w-[90%] px-1 text-center sm:px-4 sm:text-start py-4 rounded-2xl cursor-pointer">League of Legends</div>
-        <div id="roblox" class="border-[1px] border-gray-600 w-[90%] px-1 text-center sm:px-4 sm:text-start py-4 rounded-2xl cursor-pointer">Roblox</div>
-        <div id="pubg" class="border-[1px] border-gray-600 w-[90%] px-1 text-center sm:px-4 sm:text-start py-4 rounded-2xl cursor-pointer">PUBG</div>
-        <div id="others" class="border-[1px] border-gray-600 w-[90%] px-1 text-center sm:px-4 sm:text-start py-4 rounded-2xl cursor-pointer">Others</div>
+    <!-- FAQ -->
+    <div class="w-full flex flex-col my-8">
+
+      <div class="flex items-center justify-center px-4">
+        <h1 class="border-[#FFA500] border-b-[1px] w-full"></h1>
+        <h1 class="text-[#FFA500] mx-2 text-4xl sm:text-5xl md:text-6xl">FAQ</h1>
+        <h1 class="border-[#FFA500] border-b-[1px] w-full"></h1>
+      </div>
+      
+      <div class="w-full flex justify-center">
+        <h1 class="text-gray-500 text-center mt-4 max-w-[75%]">Explore the common <span class="text-[#FFA500]">questions and answers</span> about celebration</h1>
       </div>
 
-      <div class="flex flex-col w-[70%] border-[#FFA500] border-[1px] rounded-2xl p-4 h-full gap-y-4 overflow-hidden overflow-y-scroll">
-        <div class="min-h-[170px] w-full border-gray-600 border-[1px] rounded-2xl">Minecraft</div>
-        <div class="min-h-[170px] w-full border-gray-600 border-[1px] rounded-2xl">Minecraft</div>
-        <div class="min-h-[170px] w-full border-gray-600 border-[1px] rounded-2xl">Minecraft</div>
-        <div class="min-h-[170px] w-full border-gray-600 border-[1px] rounded-2xl">Minecraft</div>
-        <div class="min-h-[170px] w-full border-gray-600 border-[1px] rounded-2xl">Minecraft</div>
-        <div class="min-h-[170px] w-full border-gray-600 border-[1px] rounded-2xl">Minecraft</div>
+      <div class="grid grid-cols-1 grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 font-roboto mt-8 justify-items-center px-8">
+
+        <div class="w-[300px] h-[250px] bg-[#171717] rounded-2xl">
+          <div class="flex items-center">
+            <div class="rounded-full bg-gray-600 w-[30px] h-[30px] flex justify-center items-center text-2xl m-4">?</div>
+            <h1 class="text-[#FFA500] font-bold">What is Plugged In?</h1>
+          </div>
+          <p class="px-4">
+            Where gamers gather to fuel their passions and level up their gaming thrills! This place is a bustling hub for all things gaming and more, offering a treasure trove of goodies and services customized for the modern player.
+          </p>
+        </div>
+
+        <div class="w-[300px] h-[250px] bg-[#171717] rounded-2xl min-w-[300px]">
+          <div class="flex items-center">
+            <div class="rounded-full bg-gray-600 w-[30px] h-[30px] flex justify-center items-center text-2xl m-4">?</div>
+            <h1 class="text-[#FFA500] font-bold">What is Plugged In?</h1>
+          </div>
+          <p class="px-4">
+            Where gamers gather to fuel their passions and level up their gaming thrills! This place is a bustling hub for all things gaming and more, offering a treasure trove of goodies and services customized for the modern player.
+          </p>
+        </div>
+
+        <div class="w-[300px] h-[250px] bg-[#171717] rounded-2xl min-w-[300px]">
+          <div class="flex items-center">
+            <div class="rounded-full bg-gray-600 w-[30px] h-[30px] flex justify-center items-center text-2xl m-4">?</div>
+            <h1 class="text-[#FFA500] font-bold">What is Plugged In?</h1>
+          </div>
+          <p class="px-4">
+            Where gamers gather to fuel their passions and level up their gaming thrills! This place is a bustling hub for all things gaming and more, offering a treasure trove of goodies and services customized for the modern player.
+          </p>
+        </div>
+
+        <div class="w-[300px] h-[250px] bg-[#171717] rounded-2xl min-w-[300px]">
+          <div class="flex items-center">
+            <div class="rounded-full bg-gray-600 w-[30px] h-[30px] flex justify-center items-center text-2xl m-4">?</div>
+            <h1 class="text-[#FFA500] font-bold">What is Plugged In?</h1>
+          </div>
+          <p class="px-4">
+            Where gamers gather to fuel their passions and level up their gaming thrills! This place is a bustling hub for all things gaming and more, offering a treasure trove of goodies and services customized for the modern player.
+          </p>
+        </div>
+
+        <div class="w-[300px] h-[250px] bg-[#171717] rounded-2xl min-w-[300px]">
+          <div class="flex items-center">
+            <div class="rounded-full bg-gray-600 w-[30px] h-[30px] flex justify-center items-center text-2xl m-4">?</div>
+            <h1 class="text-[#FFA500] font-bold">What is Plugged In?</h1>
+          </div>
+          <p class="px-4">
+            Where gamers gather to fuel their passions and level up their gaming thrills! This place is a bustling hub for all things gaming and more, offering a treasure trove of goodies and services customized for the modern player.
+          </p>
+        </div>
+
+        <div class="w-[300px] h-[250px] bg-[#171717] rounded-2xl min-w-[300px]">
+          <div class="flex items-center">
+            <div class="rounded-full bg-gray-600 w-[30px] h-[30px] flex justify-center items-center text-2xl m-4">?</div>
+            <h1 class="text-[#FFA500] font-bold">What is Plugged In?</h1>
+          </div>
+          <p class="px-4">
+            Where gamers gather to fuel their passions and level up their gaming thrills! This place is a bustling hub for all things gaming and more, offering a treasure trove of goodies and services customized for the modern player.
+          </p>
+        </div>
+        
+      </div>
+    </div> 
+
+    <!-- Reviews -->
+    <div class=="flex flex-col">
+      <div class="flex items-center justify-center px-4">
+        <h1 class="border-[#FFA500] border-b-[1px] w-full"></h1>
+        <div class="flex gap-2 mx-2 text-3xl sm:gap-4 sm:text-4xl md:text-5xl">
+          <h1>Costumer<h1 class="text-[#FFA500]">Reviews</h1></h1>
+        </div>
+        <h1 class="border-[#FFA500] border-b-[1px] w-full"></h1>
       </div>
 
+      <h1 class="text-gray-500 w-full text-center mt-4">What our users say about us</h1>
+
+      <!-- Conveyor Effect -->
+      <div class="flex items-center justify-center my-8">
+        <div class="conveyor w-full h-full gap-4">
+          <div class="conveyor-track gap-8">
+
+            <div class="min-w-[300px] max-w-[300px] bg-[#171717] rounded-2xl flex flex-col gap-4 p-4 h-[200px] justify-between">
+              <div class="flex gap-4 items-center">
+                <img src="assets/logo_games/minecraft.jpg" class="rounded-full border-[1px] border-gray-400 w-12 h-12">
+                <h1 class="text-[#FFA500] font-bold font-main">GamerBoy69</h1>
+              </div>
+              <h1 class="font-roboto truncate-text">Fast Transactions</h1>
+              <h1 class="text-sm">⭐⭐⭐⭐⭐</h1>
+            </div>
+            <div class="min-w-[300px] max-w-[300px] bg-[#171717] rounded-2xl flex flex-col gap-4 p-4 h-[200px] justify-between">
+              <div class="flex gap-4 items-center">
+                <img src="assets/logo_games/minecraft.jpg" class="rounded-full border-[1px] border-gray-400 w-12 h-12">
+                <h1 class="text-[#FFA500] font-bold font-main">GamerBoy69</h1>
+              </div>
+              <h1 class="font-roboto truncate-text">Fast Transactions</h1>
+              <h1 class="text-sm">⭐⭐⭐⭐⭐</h1>
+            </div>
+            <div class="min-w-[300px] max-w-[300px] bg-[#171717] rounded-2xl flex flex-col gap-4 p-4 h-[200px] justify-between">
+              <div class="flex gap-4 items-center">
+                <img src="assets/logo_games/minecraft.jpg" class="rounded-full border-[1px] border-gray-400 w-12 h-12">
+                <h1 class="text-[#FFA500] font-bold font-main">GamerBoy69</h1>
+              </div>
+              <h1 class="font-roboto truncate-text">Fast Transactions</h1>
+              <h1 class="text-sm">⭐⭐⭐⭐⭐</h1>
+            </div>
+            <div class="min-w-[300px] max-w-[300px] bg-[#171717] rounded-2xl flex flex-col gap-4 p-4 h-[200px] justify-between">
+              <div class="flex gap-4 items-center">
+                <img src="assets/logo_games/minecraft.jpg" class="rounded-full border-[1px] border-gray-400 w-12 h-12">
+                <h1 class="text-[#FFA500] font-bold font-main">GamerBoy69</h1>
+              </div>
+              <h1 class="font-roboto truncate-text">Fast Transactions</h1>
+              <h1 class="text-sm">⭐⭐⭐⭐⭐</h1>
+            </div>
+            <div class="min-w-[300px] max-w-[300px] bg-[#171717] rounded-2xl flex flex-col gap-4 p-4 h-[200px] justify-between">
+              <div class="flex gap-4 items-center">
+                <img src="assets/logo_games/minecraft.jpg" class="rounded-full border-[1px] border-gray-400 w-12 h-12">
+                <h1 class="text-[#FFA500] font-bold font-main">GamerBoy69</h1>
+              </div>
+              <h1 class="font-roboto truncate-text">Fast Transactions</h1>
+              <h1 class="text-sm">⭐⭐⭐⭐⭐</h1>
+            </div>
+            <div class="min-w-[300px] max-w-[300px] bg-[#171717] rounded-2xl flex flex-col gap-4 p-4 h-[200px] justify-between">
+              <div class="flex gap-4 items-center">
+                <img src="assets/logo_games/minecraft.jpg" class="rounded-full border-[1px] border-gray-400 w-12 h-12">
+                <h1 class="text-[#FFA500] font-bold font-main">GamerBoy69</h1>
+              </div>
+              <h1 class="font-roboto truncate-text">Fast Transactions</h1>
+              <h1 class="text-sm">⭐⭐⭐⭐⭐</h1>
+            </div>
+            <div class="min-w-[300px] max-w-[300px] bg-[#171717] rounded-2xl flex flex-col gap-4 p-4 h-[200px] justify-between">
+              <div class="flex gap-4 items-center">
+                <img src="assets/logo_games/minecraft.jpg" class="rounded-full border-[1px] border-gray-400 w-12 h-12">
+                <h1 class="text-[#FFA500] font-bold font-main">GamerBoy69</h1>
+              </div>
+              <h1 class="font-roboto truncate-text">Fast Transactions</h1>
+              <h1 class="text-sm">⭐⭐⭐⭐⭐</h1>
+            </div>
+            <div class="min-w-[300px] max-w-[300px] bg-[#171717] rounded-2xl flex flex-col gap-4 p-4 h-[200px] justify-between">
+              <div class="flex gap-4 items-center">
+                <img src="assets/logo_games/minecraft.jpg" class="rounded-full border-[1px] border-gray-400 w-12 h-12">
+                <h1 class="text-[#FFA500] font-bold font-main">GamerBoy69</h1>
+              </div>
+              <h1 class="font-roboto truncate-text">Fast Transactions</h1>
+              <h1 class="text-sm">⭐⭐⭐⭐⭐</h1>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="font-roboto">
+      <div class="rounded-lg bg-[#171717]">
+        &copy; Copyright 2025, All Rights Reserved by Group 8
+      </div>
+
+    </footer>
+
 
   </body>
 
@@ -132,87 +305,7 @@
   <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    .clickable-item {
-        transition: background-color 0.25s ease;
-    }
-</style>
-
-<script>
-    const ids = ["minecraft", "fortnite", "valorant", "lol", "roblox", "pubg", "others"];
-    ids.forEach(id => {
-        document.getElementById(id).classList.add('clickable-item');
-        document.getElementById(id).onclick = function() {
-            ids.forEach(resetId => {
-                document.getElementById(resetId).style.backgroundColor = "";
-            });
-            document.getElementById(id).style.backgroundColor = "#FFA500";
-        }
-    });
-</script>
-  <!-- particle.js configuration -->
-  <script>
-    particlesJS("particles-js", {
-      particles: {
-        number: { value: 80, density: { enable: true, value_area: 800 } },
-        color: { value: "#FFA500" },
-        shape: {
-          type: "circle",
-          stroke: { width: 0, color: "#FFA500" },
-          polygon: { nb_sides: 5 },
-          image: { src: "img/github.svg", width: 100, height: 100 },
-        },
-        opacity: {
-          value: 0.5,
-          random: false,
-          anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
-        },
-        size: {
-          value: 3,
-          random: true,
-          anim: { enable: false, speed: 30, size_min: 0.1, sync: false },
-        },
-        line_linked: {
-          enable: true,
-          distance: 120,
-          color: "#FFA500",
-          opacity: 0.4,
-          width: 1,
-        },
-        move: {
-          enable: true,
-          speed: 2,
-          direction: "none",
-          random: false,
-          straight: false,
-          out_mode: "out",
-          bounce: false,
-          attract: { enable: false, rotateX: 600, rotateY: 1200 },
-        },
-      },
-      interactivity: {
-        detect_on: "canvas",
-        events: {
-          onhover: { enable: true, mode: "repulse" },
-          onclick: { enable: true, mode: "push" },
-          resize: true,
-        },
-        modes: {
-          grab: { distance: 400, line_linked: { opacity: 1 } },
-          bubble: {
-            distance: 400,
-            size: 40,
-            duration: 2,
-            opacity: 8,
-            speed: 0.1,
-          },
-          repulse: { distance: 100, duration: 0.8 },
-          push: { particles_nb: 2 },
-          remove: { particles_nb: 2 },
-        },
-      },
-      retina_detect: true,
-    });
-  </script>
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
 
 </html>
