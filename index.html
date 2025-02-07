@@ -88,7 +88,41 @@
 
     </div>
 
-    <div class="h-[500px] bg-red-500 w-full">
+    <!-- Our Products -->
+    <div class="w-full flex flex-col">
+
+      <div class="flex items-center justify-center px-4">
+        <h1 class="border-[#FFA500] border-b-[1px] w-full"></h1>
+        <div class="flex gap-4 mx-2">
+          <h1 class="text-6xl">Our <h1 class="text-6xl text-[#FFA500]">Products</h1></h1>
+        </div>
+        <h1 class="border-[#FFA500] border-b-[1px] w-full"></h1>
+      </div>
+
+      <h1 class="text-gray-500 w-full text-center mt-4">Browse our best selection and filter by game.</h1>
+
+    </div>
+
+    <!-- Browse Products -->
+    <div class="h-[500px] w-full flex justify-center gap-4 my-8">
+      <div class="flex flex-col w-[25%] h-auto border-[#FFA500] border-[1px] rounded-2xl flex items-center gap-y-2 py-6 justify-center">
+        <div id="minecraft" class="border-[1px] border-gray-600 w-[90%] px-1 text-center sm:px-4 sm:text-start py-4 rounded-2xl cursor-pointer">Minecraft</div>
+        <div id="fortnite" class="border-[1px] border-gray-600 w-[90%] px-1 text-center sm:px-4 sm:text-start py-4 rounded-2xl cursor-pointer">Fortnite</div>
+        <div id="valorant" class="border-[1px] border-gray-600 w-[90%] px-1 text-center sm:px-4 sm:text-start py-4 rounded-2xl cursor-pointer">Valorant</div>
+        <div id="lol" class="border-[1px] border-gray-600 w-[90%] px-1 text-center sm:px-4 sm:text-start py-4 rounded-2xl cursor-pointer">League of Legends</div>
+        <div id="roblox" class="border-[1px] border-gray-600 w-[90%] px-1 text-center sm:px-4 sm:text-start py-4 rounded-2xl cursor-pointer">Roblox</div>
+        <div id="pubg" class="border-[1px] border-gray-600 w-[90%] px-1 text-center sm:px-4 sm:text-start py-4 rounded-2xl cursor-pointer">PUBG</div>
+        <div id="others" class="border-[1px] border-gray-600 w-[90%] px-1 text-center sm:px-4 sm:text-start py-4 rounded-2xl cursor-pointer">Others</div>
+      </div>
+
+      <div class="flex flex-col w-[70%] border-[#FFA500] border-[1px] rounded-2xl p-4 h-full gap-y-4 overflow-hidden overflow-y-scroll">
+        <div class="min-h-[170px] w-full border-gray-600 border-[1px] rounded-2xl">Minecraft</div>
+        <div class="min-h-[170px] w-full border-gray-600 border-[1px] rounded-2xl">Minecraft</div>
+        <div class="min-h-[170px] w-full border-gray-600 border-[1px] rounded-2xl">Minecraft</div>
+        <div class="min-h-[170px] w-full border-gray-600 border-[1px] rounded-2xl">Minecraft</div>
+        <div class="min-h-[170px] w-full border-gray-600 border-[1px] rounded-2xl">Minecraft</div>
+        <div class="min-h-[170px] w-full border-gray-600 border-[1px] rounded-2xl">Minecraft</div>
+      </div>
 
     </div>
 
@@ -96,7 +130,27 @@
 
   <!-- particle.js background -->
   <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .clickable-item {
+        transition: background-color 0.25s ease;
+    }
+</style>
+
+<script>
+    const ids = ["minecraft", "fortnite", "valorant", "lol", "roblox", "pubg", "others"];
+    ids.forEach(id => {
+        document.getElementById(id).classList.add('clickable-item');
+        document.getElementById(id).onclick = function() {
+            ids.forEach(resetId => {
+                document.getElementById(resetId).style.backgroundColor = "";
+            });
+            document.getElementById(id).style.backgroundColor = "#FFA500";
+        }
+    });
+</script>
+  <!-- particle.js configuration -->
   <script>
     particlesJS("particles-js", {
       particles: {
