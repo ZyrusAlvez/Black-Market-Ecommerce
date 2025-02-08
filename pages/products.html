@@ -8,6 +8,7 @@
   </head>
   <body class="w-full text-white bg-[#171717] font-main">
 
+    <!-- Header -->
     <header class="h-[70px] w-full bg-[#171717] z-[999] fixed flex justify-between items-center">
       <img src="../assets/logo_pluggedin.png" alt="Plugged In Logo" class="w-10 h-10 ml-4">
       <div class="flex text-2xl gap-4 mr-4 items-center justify-center">
@@ -22,10 +23,12 @@
     </header>
     <div class="h-[70px] w-full"></div>
 
+    <!-- Main -->
     <main class="flex w-full h-[700px]">
-      <div class="w-[18%] h-[400px]"></div>
-      <aside class="w-[18%] fixed flex flex-col gap-[2px] px-4 py-4">
-        
+      <div class="w-[18%] h-[400px] hidden lg:flex"></div>
+      
+      <!-- Side bar for large screens -->
+      <aside class="w-[18%] fixed flex flex-col gap-[2px] px-4 py-4 hidden lg:flex">
         <button class="text-start flex pl-4 gap-4 py-2 rounded-lg items-center bg-[#212121]">
           <i class="fa-solid fa-border-all"></i>
           <h1>All</h1>
@@ -55,20 +58,96 @@
           <h1>PUBG</h1>
         </button>
         <button class="text-start flex pl-4 gap-4 py-2 rounded-lg items-center">
-          <div class="w-[20px] h-[20px] rounded-full text-lg bg-[#212121] flex justify-center items-center">+</div>
+          <i class="fa-solid fa-plus text-base"></i>
           <h1>Others</h1>
         </button>
-        
       </aside>
 
-      <article class="w-[80%] bg-gray-500 h-full">
+      
+      <article class="w-full lg:w-[100%] h-full">
+        <!-- Sidebar for small screens -->
+        <aside id="aside-container" class="fixed w-[230px] h-full bg-[#212121] z-50 aside-hidden lg:hidden">
+          <div class="w-full fixed flex flex-col gap-[2px] px-1 lg:flex">
+            <button class="text-start flex pl-2 gap-4 py-2 items-center text-2xl">
+              <i id="close-menu" class="fa-solid fa-xmark text-lg pl-2"></i>                    
+              <h1>Menu</h1>
+            </button>
+            <button class="text-start flex pl-4 gap-4 py-2 rounded-lg items-center bg-gray-800">
+              <i class="fa-solid fa-border-all"></i>
+              <h1>All</h1>
+            </button>
+            <button class="text-start flex pl-4 gap-4 py-2 rounded-lg items-center">
+              <img src="../assets/logo_games/minecraft.png" alt="Minecraft Logo" class="w-[15px] h-[15px]">
+              <h1>Minecraft</h1>
+            </button>
+            <button class="text-start flex pl-4 gap-4 py-2 rounded-lg items-center">
+              <img src="../assets/logo_games/fortnite.png" alt="Fortnite Logo" class="w-[15px] h-[15px]">
+              <h1>Fortnite</h1>
+            </button>
+            <button class="text-start flex pl-4 gap-4 py-2 rounded-lg items-center">
+              <img src="../assets/logo_games/valorant.png" alt="Valorant Logo" class="w-[15px] h-[15px]">
+              <h1>Valorant</h1>
+            </button>
+            <button class="text-start flex pl-4 gap-4 py-2 rounded-lg items-center">
+              <img src="../assets/logo_games/lol.png" alt="League of Legends Logo" class="w-[15px] h-[15px]">
+              <h1>League of Legends</h1>
+            </button>
+            <button class="text-start flex pl-4 gap-4 py-2 rounded-lg items-center">
+              <img src="../assets/logo_games/roblox.png" alt="Roblox Logo" class="w-[15px] h-[15px]">
+              <h1>Roblox</h1>
+            </button>
+            <button class="text-start flex pl-4 gap-4 py-2 rounded-lg items-center">
+              <img src="../assets/logo_games/pubg.png" alt="PUBG Logo" class="w-[15px] h-[15px]">
+              <h1>PUBG</h1>
+            </button>
+            <button class="text-start flex pl-4 gap-4 py-2 rounded-lg items-center">
+              <i class="fa-solid fa-plus text-base"></i>
+              <h1>Others</h1>
+            </button>
+          </div>
+        </aside>
+        
+
+        <header class="flex flex-col px-2 mt-2 fotn-main">
+
+          <div class="flex items-center gap-4 mx-2 lg:hidden">
+              <i id="menu-toggle" class="fa-solid fa-bars cursor-pointer"></i>
+              <h1 class="text-lg">Browse All</h1>
+          </div>
+
+          <div class="flex gap-4 justify-evenly items-center mt-2">
+            <h1 class="text-base font-bold lg:text-3xl hidden lg:flex">Browse All</h1>
+            <div class="relative flex items-center min-w-[120px]">           
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="absolute left-4 w-4 h-4 fill-gray-400 pointer-events-none">
+                <g>
+                  <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                </g>
+              </svg>
+              <input 
+                type="search" 
+                placeholder="Search..." 
+                name="searchbar" 
+                class="w-full h-[35px] pl-10 text-gray-400 bg-gray-800 border-0 rounded-xl outline-none shadow-[0_0_0_1.5px_#2b2c37,0_0_25px_-17px_#000] transition-all duration-300 ease-[cubic-bezier(0.19,1,0.22,1)] focus:shadow-[0_0_0_2.5px_#2f303d] hover:shadow-[0_0_0_2.5px_#2f303d,0_0_25px_-15px_#000]"
+              />
+            </div>
+
+            <div class="flex flex gap-2 items-center hover:bg-[#212121] rounded-lg p-2 mt-2 mb-2">
+              <i class="fa-solid fa-filter"></i>
+              <h2>Sort: </h2>
+              <h2>Filter </h2>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
+
+        </header>
+
       </article>
     </main>
 
   </body>
 
+  <script src="products.js"></script>
   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   <script src="https://kit.fontawesome.com/d5b7a13861.js" crossorigin="anonymous"></script>
   <script src="https://cdn.tailwindcss.com"></script>
-
 </html>
