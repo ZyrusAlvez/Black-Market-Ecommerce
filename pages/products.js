@@ -12,7 +12,7 @@ document.getElementById("close-menu").addEventListener("click", function () {
   asideContainer.classList.add("aside-hidden");
 });
 
-const ids = [
+const classes = [
   "all",
   "minecraft",
   "fortnite",
@@ -22,37 +22,17 @@ const ids = [
   "pubg",
   "others",
 ];
-document.getElementById(ids[0]).style.backgroundColor = "#212121";
-ids.forEach((id) => {
-  document.getElementById(id).classList.add("clickable-item");
-  document.getElementById(id).onclick = function () {
-    ids.forEach((resetId) => {
-      document.getElementById(resetId).style.backgroundColor = "";
-    });
-    document.getElementById(id).style.backgroundColor = "#212121";
-  };
-});
 
-const ids_sm = [
-  "all-sm",
-  "minecraft-sm",
-  "fortnite-sm",
-  "valorant-sm",
-  "lol-sm",
-  "roblox-sm",
-  "pubg-sm",
-  "others-sm",
-];
-document.getElementById(ids_sm[0]).style.backgroundColor = "#1f2937";
-ids_sm.forEach((id_sm) => {
-  document.getElementById(id_sm).classList.add("clickable-item");
-  document.getElementById(id_sm).onclick = function () {
-    ids_sm.forEach((resetId) => {
-      document.getElementById(resetId).style.backgroundColor = "";
-    });
-    document.getElementById(id_sm).style.backgroundColor = "#1f2937";
-  };
-});
+const classToTitle = {
+  all: "All",
+  minecraft: "Minecraft",
+  fortnite: "Fortnite",
+  valorant: "Valorant",
+  lol: "League of Legends",
+  roblox: "Roblox",
+  pubg: "PUBG",
+  others: "Others",
+};
 
 function renderCards(cards) {
   const container = document.getElementById("cardContainer");
@@ -61,7 +41,7 @@ function renderCards(cards) {
   cards.forEach((card) => {
     const cardElement = document.createElement("button");
     cardElement.className =
-      "bg-[#212121] h-[370px] w-[98%] rounded-2xl flex flex-col font-roboto justify-between items-between p-2 text-start border-[#212121] border-2 hover:border-[#FFA500] hover:transform hover:scale-[101%] transition-transform duration-300";
+      "bg-[#212121] h-[370px] w-[98%] rounded-2xl flex flex-col font-roboto justify-between items-between p-2 text-start border-[#212121] border-2 md:hover:border-[#FFA500] md:hover:transform md:hover:scale-[101%] transition-transform duration-300";
     cardElement.innerHTML = `
             <div class="flex flex-col gap-2">
               <img src="${card.img}" class="w-full h-[150px] object-cover rounded-2xl" />
@@ -85,4 +65,42 @@ function renderCards(cards) {
   });
 }
 
+document.querySelector(`.${classes[0]}`).style.backgroundColor = "#1f2937";
+classes.forEach((className) => {
+  const elements = document.querySelectorAll(`.${className}`);
+  elements.forEach((element) => {
+    element.classList.add("clickable-item");
+    element.onclick = function () {
+      // Reset all elements
+      classes.forEach((resetClass) => {
+        document.querySelectorAll(`.${resetClass}`).forEach((resetElement) => {
+          resetElement.style.backgroundColor = "";
+        });
+      });
+
+      const browseTitleElements = document.getElementsByClassName("browseTitle");
+      for (let i = 0; i < browseTitleElements.length; i++) {
+        browseTitleElements[i].innerText = "Browse " + classToTitle[className];
+      }
+
+      // Set the clicked element
+      elements.forEach((el) => {
+        el.style.backgroundColor = "#1f2937";
+      });
+
+      className === classes[0] && renderCards(data.all);
+      className === classes[1] && renderCards(data.minecraft);
+      className === classes[2] && renderCards(data.fortnite);
+      className === classes[3] && renderCards(data.valorant);
+      className === classes[4] && renderCards(data.league);
+      className === classes[5] && renderCards(data.roblox);
+      className === classes[6] && renderCards(data.pubg);
+      className === classes[7] && renderCards(data.others)
+      
+    };
+  });
+});
+
 renderCards(data.all);
+
+
