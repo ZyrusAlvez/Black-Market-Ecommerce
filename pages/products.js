@@ -1,5 +1,6 @@
 import * as data from "../data.js";
 
+// for aside menu
 document.getElementById("menu-toggle").addEventListener("click", function () {
   const asideContainer = document.getElementById("aside-container");
   asideContainer.classList.remove("aside-hidden");
@@ -11,6 +12,8 @@ document.getElementById("close-menu").addEventListener("click", function () {
   asideContainer.classList.remove("aside-visible");
   asideContainer.classList.add("aside-hidden");
 });
+
+let currentCategory = "All";
 
 const classes = [
   "all",
@@ -41,7 +44,7 @@ function renderCards(cards) {
   cards.forEach((card) => {
     const cardElement = document.createElement("button");
     cardElement.className =
-      "bg-[#212121] h-[370px] w-[98%] rounded-2xl flex flex-col font-roboto justify-between items-between p-2 text-start border-[#212121] border-2 md:hover:border-[#FFA500] md:hover:transform md:hover:scale-[101%] transition-transform duration-300";
+      "bg-[#212121] h-[375px] w-[98%] rounded-2xl flex flex-col font-roboto justify-between items-between p-2 text-start border-[#212121] border-2 hover:border-[#FFA500] hover:transform hover:scale-[101%] transition-transform duration-300";
     cardElement.innerHTML = `
             <div class="flex flex-col gap-2">
               <img src="${card.img}" class="w-full h-[150px] object-cover rounded-2xl" />
@@ -65,7 +68,7 @@ function renderCards(cards) {
   });
 }
 
-document.querySelector(`.${classes[0]}`).style.backgroundColor = "#1f2937";
+/// triggered when a category from aside is clicked
 classes.forEach((className) => {
   const elements = document.querySelectorAll(`.${className}`);
   elements.forEach((element) => {
@@ -80,6 +83,8 @@ classes.forEach((className) => {
 
       const browseTitleElements = document.getElementsByClassName("browseTitle");
       for (let i = 0; i < browseTitleElements.length; i++) {
+
+        classToTitle[className]
         browseTitleElements[i].innerText = "Browse " + classToTitle[className];
       }
 
@@ -87,20 +92,110 @@ classes.forEach((className) => {
       elements.forEach((el) => {
         el.style.backgroundColor = "#1f2937";
       });
+      document.getElementById("sort-name").innerText = "Rate";
 
-      className === classes[0] && renderCards(data.all);
-      className === classes[1] && renderCards(data.minecraft);
-      className === classes[2] && renderCards(data.fortnite);
-      className === classes[3] && renderCards(data.valorant);
-      className === classes[4] && renderCards(data.league);
-      className === classes[5] && renderCards(data.roblox);
-      className === classes[6] && renderCards(data.pubg);
-      className === classes[7] && renderCards(data.others)
+      className === classes[0] && renderCards(data.all.sort((a, b) => b.rate - a.rate))
+      className === classes[1] && renderCards(data.minecraft.sort((a, b) => b.rate - a.rate))
+      className === classes[2] && renderCards(data.fortnite.sort((a, b) => b.rate - a.rate))
+      className === classes[3] && renderCards(data.valorant.sort((a, b) => b.rate - a.rate))
+      className === classes[4] && renderCards(data.league.sort((a, b) => b.rate - a.rate))
+      className === classes[5] && renderCards(data.roblox.sort((a, b) => b.rate - a.rate))
+      className === classes[6] && renderCards(data.pubg.sort((a, b) => b.rate - a.rate))
+      className === classes[7] && renderCards(data.others.sort((a, b) => b.rate - a.rate))
       
     };
   });
 });
 
-renderCards(data.all);
+// default render of cards
+renderCards(data.all.sort((a, b) => b.rate - a.rate))
+// default backgroundColor of nav selections
+document.querySelector(`.${classes[0]}`).style.backgroundColor = "#1f2937";
 
 
+// for filter dropdown
+document.addEventListener("DOMContentLoaded", function() {
+  const filterButton = document.getElementById('filter');
+  const filterDropdown = document.getElementById('filter-dropdown');
+
+  filterButton.addEventListener('click', function() {
+    filterDropdown.classList.toggle('hidden');
+  });
+
+  filterDropdown.addEventListener("mouseenter", function() {
+    filterDropdown.classList.remove("hidden");
+  });
+
+  filterDropdown.addEventListener("mouseleave", function() {
+    filterDropdown.classList.add("hidden");
+  })
+});
+
+// for sort based on rate
+document.getElementById('sort-rating').onclick = function(e) {
+  document.getElementById("sort-name").innerText = "Rate";
+  e.stopPropagation();
+  if (currentCategory === "All") {
+    renderCards(data.all.sort((a, b) => b.rate - a.rate));
+  }else if (currentCategory === "Minecraft") {
+    renderCards(data.minecraft.sort((a, b) => b.rate - a.rate));
+  }else if (currentCategory === "Fortnite") {
+    renderCards(data.fortnite.sort((a, b) => b.rate - a.rate));
+  }else if (currentCategory === "Valorant") {
+    renderCards(data.valorant.sort((a, b) => b.rate - a.rate));
+  }else if (currentCategory === "League of Legends") {
+    renderCards(data.league.sort((a, b) => b.rate - a.rate));
+  }else if (currentCategory === "Roblox") {
+    renderCards(data.roblox.sort((a, b) => b.rate - a.rate));
+  }else if (currentCategory === "PUBG") {
+    renderCards(data.pubg.sort((a, b) => b.rate - a.rate));
+  }else if (currentCategory === "Others") {
+    renderCards(data.others.sort((a, b) => b.rate - a.rate));
+  }  
+}
+
+// for sort based on sold
+document.getElementById('sort-sold').onclick = function(e) {
+  e.stopPropagation();
+  document.getElementById("sort-name").innerText = "Sold";
+  if (currentCategory === "All") {
+    renderCards(data.all.sort((a, b) => b.sold - a.sold));
+  }else if (currentCategory === "Minecraft") {
+    renderCards(data.minecraft.sort((a, b) => b.sold - a.sold));
+  }else if (currentCategory === "Fortnite") {
+    renderCards(data.fortnite.sort((a, b) => b.sold - a.sold));
+  }else if (currentCategory === "Valorant") {
+    renderCards(data.valorant.sort((a, b) => b.sold - a.sold));
+  }else if (currentCategory === "League of Legends") {
+    renderCards(data.league.sort((a, b) => b.sold - a.sold));
+  }else if (currentCategory === "Roblox") {
+    renderCards(data.roblox.sort((a, b) => b.sold - a.sold));
+  }else if (currentCategory === "PUBG") {
+    renderCards(data.pubg.sort((a, b) => b.sold - a.sold));
+  }else if (currentCategory === "Others") {
+    renderCards(data.others.sort((a, b) => b.sold - a.sold));
+  }  
+}
+
+// for sort based on price
+document.getElementById('sort-price').onclick = function(e) {
+  e.stopPropagation();
+  document.getElementById("sort-name").innerText = "Price";
+  if (currentCategory === "All") {
+    renderCards(data.all.sort((a, b) => b.price - a.price));
+  }else if (currentCategory === "Minecraft") {
+    renderCards(data.minecraft.sort((a, b) => b.price - a.price));
+  }else if (currentCategory === "Fortnite") {
+    renderCards(data.fortnite.sort((a, b) => b.price - a.price));
+  }else if (currentCategory === "Valorant") {
+    renderCards(data.valorant.sort((a, b) => b.price - a.price));
+  }else if (currentCategory === "League of Legends") {
+    renderCards(data.league.sort((a, b) => b.price - a.price));
+  }else if (currentCategory === "Roblox") {
+    renderCards(data.roblox.sort((a, b) => b.price - a.price));
+  }else if (currentCategory === "PUBG") {
+    renderCards(data.pubg.sort((a, b) => b.price - a.price));
+  }else if (currentCategory === "Others") {
+    renderCards(data.others.sort((a, b) => b.price - a.price));
+  }  
+}
