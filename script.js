@@ -1,3 +1,5 @@
+import * as data from "./data.js";
+
 const ids = [
   "minecraft",
   "fortnite",
@@ -8,115 +10,7 @@ const ids = [
   "others",
 ];
 
-minecraft = [
-  {
-    title: "Ore X-ray",
-    img: "assets/minecraft_xray.jpg",
-    description:
-      "This is a mod that allows you to see ores through walls. It is a very useful mod for survival mode.",
-    stock: 10,
-    price: 5.99,
-    sold: 10,
-    rate: 4.8,
-  },
-  {
-    title: "Auto-Clicker",
-    img: "assets/minecraft_xray.jpg",
-    description:
-      "This is a mod that allows you to click faster than normal. It is a very useful mod for PvP. This is a mod that allows you to aim better. It is a very useful mod for PvP.",
-    stock: 5,
-    price: 4.99,
-    sold: 10,
-    rate: 4.8,
-  },
-  {
-    title: "Aimbot",
-    img: "assets/minecraft_xray.jpg",
-    description:
-      "This is a mod that allows you to aim better. It is a very useful mod for PvP.",
-    stock: 3,
-    price: 3.99,
-    sold: 10,
-    rate: 4.8,
-  },
-  {
-    title: "Fly",
-    img: "assets/minecraft_xray.jpg",
-    description:
-      "This is a mod that allows you to fly. It is a very useful mod for survival mode.",
-    stock: 2,
-    price: 2.99,
-    sold: 10,
-    rate: 4.8,
-  },
-  {
-    title: "Speed",
-    img: "assets/minecraft_xray.jpg",
-    description:
-      "This is a mod that allows you to run faster. It is a very useful mod for PvP.",
-    stock: 1,
-    price: 1.99,
-    sold: 10,
-    rate: 4.8,
-  },
-];
-
-valorant = [
-  {
-    title: "Speed",
-    img: "assets/minecraft_xray.jpg",
-    description:
-      "This is a mod that allows you to run faster. It is a very useful mod for PvP.",
-    stock: 1,
-    price: 1.99,
-    sold: 10,
-    rate: 4.8,
-  },
-  {
-    title: "Fly",
-    img: "assets/minecraft_xray.jpg",
-    description:
-      "This is a mod that allows you to fly. It is a very useful mod for survival mode.",
-    stock: 2,
-    price: 2.99,
-    sold: 10,
-    rate: 4.8,
-  },
-  {
-    title: "Aimbot",
-    img: "assets/minecraft_xray.jpg",
-    description:
-      "This is a mod that allows you to aim better. It is a very useful mod for PvP.",
-    stock: 3,
-    price: 3.99,
-    sold: 10,
-    rate: 4.8,
-  },
-  {
-    title: "Auto-Clicker",
-    img: "assets/minecraft_xray.jpg",
-    description:
-      "This is a mod that allows you to click faster than normal. It is a very useful mod for PvP.",
-    stock: 5,
-    price: 4.99,
-    sold: 10,
-    rate: 4.8,
-  },
-  {
-    title: "Ore X-ray",
-    img: "assets/minecraft_xray.jpg",
-    description:
-      "This is a mod that allows you to see ores through walls. It is a very useful mod for survival mode.",
-    stock: 10,
-    price: 5.99,
-    sold: 10,
-    rate: 4.8,
-  },
-]
-
-
-
-renderCards(minecraft);
+renderCards(data.minecraft);
 document.getElementById(ids[0]).style.backgroundColor = "#FFA500";
 ids.forEach((id) => {
   document.getElementById(id).classList.add("clickable-item");
@@ -126,12 +20,14 @@ ids.forEach((id) => {
     });
     document.getElementById(id).style.backgroundColor = "#FFA500";
     
-    id === ids[0] && renderCards(minecraft);
-    id === ids[1] && renderCards(valorant);
+    id === ids[0] && renderCards(data.minecraft);
+    id === ids[1] && renderCards(data.fortnite);
+    id === ids[2] && renderCards(data.valorant);
+    id === ids[3] && renderCards(data.league);
+    id === ids[4] && renderCards(data.roblox);
+    id === ids[5] && renderCards(data.pubg);
   };
 });
-
-
 
 function renderCards(cards) {
   const container = document.getElementById("cardContainer");
@@ -142,7 +38,7 @@ function renderCards(cards) {
     cardElement.className =
       "h-auto w-full border-gray-700 border-[1px] rounded-2xl flex flex-col font-roboto justify-center p-2 md:flex-row md:items-center md:gap-4 md:justify-between";
     cardElement.innerHTML = `
-          <img src="${card.img}" class="w-full h-[150px] object-cover rounded-2xl md:w-[250px] md:h-full" />
+          <img src="${card.img}" class="w-full h-[150px] object-cover rounded-2xl md:w-[250px] md:h-full bg-yellow-800" />
           <div class="flex flex-col gap-2 mt-2 w-full h-full md:flex-row">
             <div class="flex flex-col gap-2 justify-evenly">
               <h1 class="font-bold text-xl md:text-2xl">${card.title}</h1>
