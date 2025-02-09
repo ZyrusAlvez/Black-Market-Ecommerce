@@ -1,14 +1,166 @@
-const ids = ["minecraft", "fortnite", "valorant", "lol", "roblox", "pubg", "others"];
+const ids = [
+  "minecraft",
+  "fortnite",
+  "valorant",
+  "lol",
+  "roblox",
+  "pubg",
+  "others",
+];
+
+minecraft = [
+  {
+    title: "Ore X-ray",
+    img: "assets/minecraft_xray.jpg",
+    description:
+      "This is a mod that allows you to see ores through walls. It is a very useful mod for survival mode.",
+    stock: 10,
+    price: 5.99,
+    sold: 10,
+    rate: 4.8,
+  },
+  {
+    title: "Auto-Clicker",
+    img: "assets/minecraft_xray.jpg",
+    description:
+      "This is a mod that allows you to click faster than normal. It is a very useful mod for PvP. This is a mod that allows you to aim better. It is a very useful mod for PvP.",
+    stock: 5,
+    price: 4.99,
+    sold: 10,
+    rate: 4.8,
+  },
+  {
+    title: "Aimbot",
+    img: "assets/minecraft_xray.jpg",
+    description:
+      "This is a mod that allows you to aim better. It is a very useful mod for PvP.",
+    stock: 3,
+    price: 3.99,
+    sold: 10,
+    rate: 4.8,
+  },
+  {
+    title: "Fly",
+    img: "assets/minecraft_xray.jpg",
+    description:
+      "This is a mod that allows you to fly. It is a very useful mod for survival mode.",
+    stock: 2,
+    price: 2.99,
+    sold: 10,
+    rate: 4.8,
+  },
+  {
+    title: "Speed",
+    img: "assets/minecraft_xray.jpg",
+    description:
+      "This is a mod that allows you to run faster. It is a very useful mod for PvP.",
+    stock: 1,
+    price: 1.99,
+    sold: 10,
+    rate: 4.8,
+  },
+];
+
+valorant = [
+  {
+    title: "Speed",
+    img: "assets/minecraft_xray.jpg",
+    description:
+      "This is a mod that allows you to run faster. It is a very useful mod for PvP.",
+    stock: 1,
+    price: 1.99,
+    sold: 10,
+    rate: 4.8,
+  },
+  {
+    title: "Fly",
+    img: "assets/minecraft_xray.jpg",
+    description:
+      "This is a mod that allows you to fly. It is a very useful mod for survival mode.",
+    stock: 2,
+    price: 2.99,
+    sold: 10,
+    rate: 4.8,
+  },
+  {
+    title: "Aimbot",
+    img: "assets/minecraft_xray.jpg",
+    description:
+      "This is a mod that allows you to aim better. It is a very useful mod for PvP.",
+    stock: 3,
+    price: 3.99,
+    sold: 10,
+    rate: 4.8,
+  },
+  {
+    title: "Auto-Clicker",
+    img: "assets/minecraft_xray.jpg",
+    description:
+      "This is a mod that allows you to click faster than normal. It is a very useful mod for PvP.",
+    stock: 5,
+    price: 4.99,
+    sold: 10,
+    rate: 4.8,
+  },
+  {
+    title: "Ore X-ray",
+    img: "assets/minecraft_xray.jpg",
+    description:
+      "This is a mod that allows you to see ores through walls. It is a very useful mod for survival mode.",
+    stock: 10,
+    price: 5.99,
+    sold: 10,
+    rate: 4.8,
+  },
+]
+
+
+
+renderCards(minecraft);
 document.getElementById(ids[0]).style.backgroundColor = "#FFA500";
-ids.forEach(id => {
-    document.getElementById(id).classList.add('clickable-item');
-    document.getElementById(id).onclick = function() {
-        ids.forEach(resetId => {
-            document.getElementById(resetId).style.backgroundColor = "";
-        });
-        document.getElementById(id).style.backgroundColor = "#FFA500";
-    }
+ids.forEach((id) => {
+  document.getElementById(id).classList.add("clickable-item");
+  document.getElementById(id).onclick = function () {
+    ids.forEach((resetId) => {
+      document.getElementById(resetId).style.backgroundColor = "";
+    });
+    document.getElementById(id).style.backgroundColor = "#FFA500";
+    
+    id === ids[0] && renderCards(minecraft);
+    id === ids[1] && renderCards(valorant);
+  };
 });
+
+
+
+function renderCards(cards) {
+  const container = document.getElementById("cardContainer");
+  container.innerHTML = ""; // Clear previous content
+
+  cards.forEach((card) => {
+    const cardElement = document.createElement("div");
+    cardElement.className =
+      "h-auto w-full border-gray-700 border-[1px] rounded-2xl flex flex-col font-roboto justify-center p-2 md:flex-row md:items-center md:gap-4 md:justify-between";
+    cardElement.innerHTML = `
+          <img src="${card.img}" class="w-full h-[150px] object-cover rounded-2xl md:w-[250px] md:h-full" />
+          <div class="flex flex-col gap-2 mt-2 w-full h-full md:flex-row">
+            <div class="flex flex-col gap-2 justify-evenly">
+              <h1 class="font-bold text-xl md:text-2xl">${card.title}</h1>
+              <p class="text-gray-500 truncate-text-3">${card.description}</p>
+              <div class="text-[12px] text-[#22cc5e] bg-[#22cc5e26] w-fit rounded-lg py-[4px] px-[8px]">${card.stock} In Stock</div>
+            </div>  
+            <div class="flex justify-between items-center md:flex-col ">
+              <div class="font-bold text-xl ml-2">$${card.price}</div>
+              <button class="bg-[#FFA500] text-white rounded-lg py-1 px-2 mb-2 font-bold hover:bg-[#FFB733]">Purchase</button>
+            </div>
+          </div>
+      `;
+    container.appendChild(cardElement);
+  });
+}
+
+
+
 
 // particles.js configuration
 particlesJS("particles-js", {

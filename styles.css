@@ -54,6 +54,14 @@
   text-overflow: ellipsis;
 }
 
+.truncate-text-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /* Create a class that uses the custom animation */
 .animate-splash {
   animation: splashPulse 2s infinite;
