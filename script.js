@@ -42,7 +42,7 @@ function renderCards(cards) {
           <div class="flex flex-col gap-2 mt-2 w-full h-full md:flex-row">
             <div class="flex flex-col gap-2 justify-evenly">
               <h1 class="font-bold text-xl md:text-2xl">${card.title}</h1>
-              <p class="text-gray-500 truncate-text-3">${card.description}</p>
+              <p class="text-gray-500 truncate-text-3">${card.subtitle}</p>
               <div class="text-[12px] text-[#22cc5e] bg-[#22cc5e26] w-fit rounded-lg py-[4px] px-[8px]">${card.stock} In Stock</div>
             </div>  
             <div class="flex justify-between items-center md:flex-col ">

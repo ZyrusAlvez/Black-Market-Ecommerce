@@ -53,7 +53,7 @@ function renderCards(cards) {
                 <h1>$${card.price}</h1>
                 <div class="text-[12px] ml-2 text-[#ffa500]">${card.sold} Sold</div>
               </div>
-              <p class="text-gray-500 truncate-text-4 text-sm">${card.description}</p>
+              <p class="text-gray-500 truncate-text-4 text-sm">${card.subtitle}</p>
             </div>
             <div class="flex">
               <div class="flex items-center text-[12px] py-[1px] px-[2px] gap-1 border-[1.5px] border-[#ffa500] w-fit bg-yellow-800">
@@ -65,6 +65,9 @@ function renderCards(cards) {
 
         `;
     container.appendChild(cardElement);
+    cardElement.onclick = function () {
+      window.location.href = `product.html?id=${card.id}`;
+    }
   });
 }
 

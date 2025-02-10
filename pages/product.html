@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Product Details</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" href="/assets/logo_pluggedin.png" type="image/png" />
+</head>
+<body class="w-full text-white bg-[#171717] font-roboto">
+
+  <!-- Header -->
+  <header class="h-[70px] w-full bg-[#171717] z-[999] fixed flex justify-between items-center">
+    <img src="../assets/logo_pluggedin.png" alt="Plugged In Logo" class="w-10 h-10">
+    <div class="flex text-2xl gap-4 mr-4 items-center justify-center">
+      <i class="fa-solid fa-cart-shopping text-[#FFA500] text-lg bg-gray-800 py-2 px-2 rounded-lg"></i>
+      <a href="/pages/login.html">
+        <button class="flex rounded-xl gap-2 justify-center items-center bg-gray-800 py-2 px-4 text-sm">
+          <i class="fa-regular fa-user"></i>
+          <h1>Sign Up / log In</h1>
+        </button>
+      </a>
+    </div>
+  </header>
+  <div class="h-[70px] w-full"></div>
+
+  <!-- Main -->
+  <main class="flex w-full px-4 gap-4">
+
+    <div class="w-[50%]">
+      <img id="product-image" src="" alt="Product Image" class="w-full sticky top-22 mt-4">
+    </div>
+
+    <div class="flex flex-col w-[50%] gap-4 mt-4 text-[#a3a3a3b2]">
+      <h1 id="product-title" class="text-3xl font-semibold uppercase"></h1>
+      <h2 id="product-subtitle" class="text-base"></h2>
+
+      <div class="flex">
+        <div class="flex items-center text-[12px] py-[1px] px-[2px] gap-1 border-[1.5px] border-[#ffa500] w-fit bg-yellow-800">
+          <i class="fa-solid fa-star text-[#FFA500] vertical-center"></i>
+          <h1 id="product-rate" class="text-white"></h1>
+        </div> 
+        <div class="text-[12px] text-[#22cc5e] bg-[#22cc5e26] w-fit py-[3px] px-[4px] ml-4"><span id="product-sold"></span> Total Sold</div>
+      </div>
+      
+      <div class="flex text-[#ffa500] text-3xl font-semibold justify-between">
+        <h1>$<span id="product-price"></span></h1>
+
+        <div class="flex gap-4 text-base items-center text-[#a3a3a3b2]">
+          <h1 class="font-normal">Quantity:</h1>
+          <button id="buttonMinus" class="rounded-sm py-[6px] px-[14px] bg-[#262626] text-white">-</button>
+          <h1 id="quantity" class="text-white">1</h1>
+          <button id="buttonPlus" class="rounded-sm py-[6px] px-[12px] bg-[#262626] text-white">+</button>
+        </div>
+      </div>
+
+      <h1>Variants:</h1>
+      <div id="variants-div" class="flex flex-col gap-4 w-full items-center">
+      </div>
+
+      <h1>Description:</h1>
+      <div id="description-div" class="flex flex-col gap-2 w-full h-auto w-full rounded-lg font-roboto p-4 bg-[#212121] text-white">
+      </div>
+
+    </div>
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="font-roboto m-4 flex flex-col gap-4 mt-16">
+
+    <div class="flex flex-col gap-4 md:flex-row md:justify-between">
+      <div class="flex flex-col gap-4">
+        <div class="font-title flex items-center gap-4">
+          <img src="/assets/logo_pluggedin.png" alt="Plugged In Logo" class="w-8 h-8">
+          <h1>Plugged In</h1>
+        </div>
+        <div class="flex gap-4 text-lg">
+          <i class="fa-brands fa-facebook-f cursor-pointer"></i>
+          <i class="fa-brands fa-telegram cursor-pointer"></i>
+          <i class="fa-brands fa-instagram cursor-pointer"></i>
+        </div>
+      </div>
+
+      <div class="flex justify-between gap-16 mt-6 md:mt-0">
+        <div class="flex flex-col gap-2 text-gray-500">
+          <h1 class="text-[#FFA500] font-bold text-lg">Our Shop</h1>
+          <h2 class="cursor-pointer">About Us</h2>
+          <h2 class="cursor-pointer">How it works</h2>
+          <h2 class="cursor-pointer">FAQ</h2>
+        </div>
+        <div class="flex flex-col gap-2 text-gray-500">
+          <h1 class="text-[#FFA500] font-bold text-lg">Help</h1>
+          <h2 class="cursor-pointer">Support</h2>
+          <h2 class="cursor-pointer">Terms & Conditions</h2>
+          <h2 class="cursor-pointer">Refund Policy</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="rounded-lg bg-[#212121] text-center w-full p-4">
+      &copy; Copyright 2025, All Rights Reserved by Group 8
+    </div>
+  </footer>
+
+
+  <script type="module" src="product.js"></script>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <script src="https://kit.fontawesome.com/d5b7a13861.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
