@@ -93,6 +93,7 @@ classes.forEach((className) => {
         el.style.backgroundColor = "#1f2937";
       });
       document.getElementById("sort-name").innerText = "Rate";
+      currentCategory = classToTitle[className];
 
       className === classes[0] && renderCards(data.all.sort((a, b) => b.rate - a.rate))
       className === classes[1] && renderCards(data.minecraft.sort((a, b) => b.rate - a.rate))
