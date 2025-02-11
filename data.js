@@ -618,7 +618,83 @@ export const pubg = [
 
 export const others = [
   {
-
+    id: "Zenless",
+    title: "Resource Generator/Client",
+    img: "assets/RESOURCE_CLIENT.png",
+    subtitle:
+      "Resource Generators/Client allows players to gain unlimited in-game currency and materials. It allows players to quickly purchase items and upgrade characters without the usual grind.",
+    stock: 26,
+    price: 18.99,
+    sold: 54,
+    rate: 4.8,
+    variants: [
+      {
+        title: "Zenless - DAY[STRIPE/PAYPAL/LTC]",
+        subtitle: "AntiCheat Bypass and Hardware Spoofer",
+        stock: 135,
+        price: 8.99,
+      },
+      {
+        title: "Zenless - WEEK[STRIPE/PAYPAL/LTC]",
+        subtitle: "AntiCheat Bypass and Hardware Spoofer",
+        stock: 35,
+        price: 19.99,
+      },
+      {
+        title: "Zenless - MONTH[STRIPE/PAYPAL/LTC]",
+        subtitle: "AntiCheat Bypass and Hardware Spoofer",
+        stock: 10,
+        price: 49.99,
+      },
+    ],
+  description: {
+    "infinite Resource" : "Elevate your gaming experience by removing the time consuming grind and more to testing and gettings stronger characters.",
+    "Anticheat" : "Get access to the resources needed to dominate the game Zenless Zone Zero without the worry of losing your progress and account over petty bans.",
+  },
+  },
+  {
+    id: "Honkai",
+    title: "Infinite Stamina",
+    img: "assets/INFINITE_LOGO.png",
+    subtitle:
+      "Infinite Stamina provides this cheat unlimited stamina, allowing players to explore and battle continuously without waiting for regeneration. It facilitates faster progression and resource gathering.",
+    stock: 54,
+    price: 29.99,
+    sold: 34,
+    rate: 4.0,
+    variants: [
+      {
+        title: "HSR - LFT[STRIPE/PAYPAL/LTC]",
+        subtitle: "AntiCheat Bypass",
+        stock: 50,
+        price: 39.99,
+      },
+    ],
+  description: {
+    "Infinite Stamina" : "Gives infinite stamina, breaking the limit of your character, paving a path of never-ending action",
+  },
+  },
+  {
+    id: "COD",
+    title: "Infinite Ammo",
+    img: "assets/INFINITE_AMMO.png",
+    subtitle:
+      "This cheat grants players unlimited ammunition for their weapons, eliminating the need to reload. Players can fire continuously without worrying about running out of bullets, which enhances combat effectiveness in both multiplayer and single-player modes.",
+    stock: 20,
+    price: 11.99,
+    sold: 105,
+    rate: 5.0,
+    variants: [
+      {
+        title: "COD - LFT[STRIPE/PAYPAL/LTC]",
+        subtitle: "Bypass Anticheat",
+        stock: 509,
+        price: 99.99,
+      },
+    ],
+  description: {
+    "Infinite Ammo" : "No longer need for reload and stopping the action as Ammo is no longer of concern.",
+  },
   },
 ]
 
