@@ -651,6 +651,17 @@ export const roblox = [
     price: 12.99,
     sold: 204,
     rate: 3.8,
+    variants: [
+      {
+        title: "Aztup - LFT[STRIPE/PAYPAL/LTC]",
+        subtitle: "AntiCheat Bypass",
+        stock: 505,
+        price: 14.99,
+      },
+    ],
+  description: {
+    "SUPPORT ALL POPULAR GAMES" : "Have menus and hacks on all the current popular games!",
+  },
   },
 ];
 
