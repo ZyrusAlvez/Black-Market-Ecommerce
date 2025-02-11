@@ -68,6 +68,34 @@ export const valorant = [
     price: 15.99,
     sold: 53,
     rate: 3.5,
+    variants: [
+      {
+        title: "DW - DAY[STRIPE/PAYPAL/LTC]",
+        subtitle: "VG BYPASS + Inbuilt Spoofer",
+        stock: 30,
+        price: 5.20,
+      },
+      {
+        title: "DW - WEEK[STRIPE/PAYPAL/LTC]",
+        subtitle: "VG BYPASS + Inbuilt Spoofer",
+        stock: 13,
+        price: 20.80,
+      },
+      {
+        title: "DW - MONTH[STRIPE/PAYPAL/LTC]",
+        subtitle: "VG BYPASS + Inbuilt Spoofer",
+        stock: 3,
+        price: 36.40,
+      }
+    ],
+  description: {
+    "Customizable" : "Fine-tune settings like FOV, smooth aiming, and targeting to match your playstyle.",
+    "Enhanced ESP" : "Get real-time insights on enemy positions, resources, and health to plan your moves effectively.",
+    "Wallhack" : "Maintain complete control by seeing through walls and obstacles.",
+    "Triggerbot" : "Automate your shots for unmatched precision and efficiency.",
+    "Radar Hack" : "Track every enemy on a minimap for superior tactical awareness.",
+    "Anti-Detection System" : "Advanced measures protect your account from bans, ensuring secure gameplay.",
+  },
   },
   {
     id: "v-2",
@@ -79,6 +107,33 @@ export const valorant = [
     price: 14.99,
     sold: 8,
     rate: 2.3,
+    variants: [
+      {
+        title: "Onyx Lite - DAY[STRIPE/PAYPAL/LTC]",
+        subtitle: "VG BYPASS",
+        stock: 76,
+        price: 5.19,
+      },
+      {
+        title: "Onyx Lite - WEEK[STRIPE/PAYPAL/LTC]",
+        subtitle: "VG BYPASS",
+        stock: 2,
+        price: 20.79,
+      },
+      {
+        title: "Onyx Lite - MONTH[STRIPE/PAYPAL/LTC]",
+        subtitle: "VG BYPASS",
+        stock: 58,
+        price: 51.99,
+      },
+    ],
+  description: {
+    "ESP Visuals" : "Stay ahead of your enemies with tools like Box ESP, Snaplines, Skeleton visuals, and Healthbars. These features give you a complete view of enemy positions, teammate locations, and key details such as health and distance.",
+    "Optimized for Performance" : "Onyx Lite is designed to minimize system impact, ensuring smooth gameplay even during intense matches. Enjoy reliable features without lag or interference.",
+    "Anti-Cheat Protection" : "Safeguard your account with advanced anti-cheat technology. Onyx Lite ensures you remain undetected, letting you focus on dominating your opponents.",
+    "User-Friendly Interface" : "Configure your settings effortlessly with Onyx Lite’s intuitive dashboard. Adjust ESP visuals to suit your preferences and enhance your playstyle in just a few clicks.",
+    "Regular Updates" : "Stay competitive with frequent updates that ensure compatibility with Valorant’s latest patches and meta changes.",
+  },
   },
   {
     id: "v-3",
@@ -90,6 +145,33 @@ export const valorant = [
     price: 18.99,
     sold: 34,
     rate: 4.3,
+    variants: [
+      {
+        title: "Onyx Full - DAY[STRIPE/PAYPAL/LTC]",
+        subtitle: "VG BYPASS + Spoofer",
+        stock: 1,
+        price: 10.39,
+      },
+      {
+        title: "Onyx Full - WEEK[STRIPE/PAYPAL/LTC]",
+        subtitle: "VG BYPASS + Spoofer",
+        stock: 5,
+        price: 44.71,
+      },
+      {
+        title: "Onyx Full - MONTH[STRIPE/PAYPAL/LTC]",
+        subtitle: "VG BYPASS + Spoofer",
+        stock: 12,
+        price: 86.31,
+      },
+    ],
+  description: {
+    "Customizable Aimbot" : "Achieve flawless accuracy with an Aimbot that allows you to tweak FOV, smoothness, and hitbox targeting. This ensures every shot lands naturally, giving you a competitive edge while staying undetected.",
+    "ESP Visuals" : "Stay ahead of your opponents with ESP features that let you see enemy locations, track teammates, and monitor important information like health, distance, and weapons. Make smarter tactical decisions and control the battlefield with ease.",
+    "Triggerbot" : "React faster with the automated Triggerbot, which fires instantly when your crosshair aligns with a target. This feature is perfect for high-pressure situations where precision is critical.",
+    "Anti-Cheat Protection" : "Onyx prioritizes your safety with advanced anti-cheat measures, ensuring your account remains secure while using its powerful features.",
+    "Frequent Updates" : "Onyx is continuously updated to stay compatible with Valorant’s latest patches, ensuring seamless performance and reliability.",
+  },
   },
   {
     id: "v-4",
@@ -101,6 +183,31 @@ export const valorant = [
     price: 19.99,
     sold: 98,
     rate: 4.9,
+    variants: [
+      {
+        title: "Onyx Full - DAY[STRIPE/PAYPAL/LTC]",
+        subtitle: "VG BYPASS",
+        stock: 13,
+        price: 7.99,
+      },
+      {
+        title: "Onyx Full - WEEK[STRIPE/PAYPAL/LTC]",
+        subtitle: "VG BYPASS",
+        stock: 63,
+        price: 45.00,
+      },
+      {
+        title: "Onyx Full - MONTH[STRIPE/PAYPAL/LTC]",
+        subtitle: "VG BYPASS",
+        stock: 100,
+        price: 79.00,
+      },
+    ],
+  description: {
+    "Aim" : "Enable Aimbot, Aim trap, X Speed, Y Speed, Aiming Range, Hitbox, Aim Hotkey",
+    "Visuals" : "Box ESP, Show line, Show Health, Show Range, Show Head, Show Holding, Show Skill/Trap, Show Teammate, Show warning, Radar ESP, Show bones, Show rank",
+    "Triggerbot" : "Enable triggerbot, Trigger Delay, Triger Hotkey",
+  },
   },
 ];
 
@@ -115,6 +222,33 @@ export const fortnite = [
     price: 105.99,
     sold: 5,
     rate: 4.9,
+    variants: [
+      {
+        title: "Disconnect - DAY[STRIPE/PAYPAL/LTC]",
+        subtitle: "EasyAntiCheat BYPASS",
+        stock: 3,
+        price: 10.39,
+      },
+      {
+        title: "Disconnect - WEEK[STRIPE/PAYPAL/LTC]",
+        subtitle: "EasyAntiCheat BYPASS",
+        stock: 56,
+        price: 36.39,
+      },
+      {
+        title: "Disconnect - MONTH[STRIPE/PAYPAL/LTC]",
+        subtitle: "EasyAntiCheat BYPASS",
+        stock: 32,
+        price: 67.59,
+      },
+    ],
+  description: {
+    "Aimbot" : "Land every shot with unmatched precision and customizable settings for smoothness, FOV, and hitbox targeting.",
+    "ESP (Visual Enhancements)" : "Easily locate enemies, resources, and loot through advanced visuals such as Box ESP and Health Indicators.",
+    "Wallhack" : "See through walls to predict movements and plan your strategy.",
+    "No Recoil" : "Maintain perfect aim by eliminating weapon recoil for steady shots.",
+    "Item ESP" : "Filter loot by rarity to find the best gear quickly.",
+  },
   },
   {
     id: "f-2",
@@ -126,6 +260,33 @@ export const fortnite = [
     price: 12.99,
     sold: 15,
     rate: 3.5,
+    variants: [
+      {
+        title: "Onyx Lite - DAY[STRIPE/PAYPAL/LTC]",
+        subtitle: "EasyAntiCheat BYPASS",
+        stock: 3,
+        price: 8.31,
+      },
+      {
+        title: "Onyx Lite - WEEK[STRIPE/PAYPAL/LTC]",
+        subtitle: "EasyAntiCheat BYPASS",
+        stock: 56,
+        price: 23.91,
+      },
+      {
+        title: "Onyx Lite - MONTH[STRIPE/PAYPAL/LTC]",
+        subtitle: "EasyAntiCheat BYPASS",
+        stock: 32,
+        price: 49.91,
+      },
+    ],
+  description: {
+    "Customizable Aimbot" : "Land every shot with adjustable settings for smoothness, field of view (FOV), and hitbox targeting. Perfect for improving accuracy in all combat scenarios.",
+    "ESP Visual Enhancements" : "Gain complete map awareness by tracking enemies, teammates, and loot. Features like Box ESP and Health Indicators make it easier to plan your strategy effectively.",
+    "No Recoil Stability" : "Eliminate weapon recoil for consistent and accurate shots, even during intense firefights.",
+    "Secure Anti-Cheat Protection" : "Stay undetected with advanced measures that safeguard your account while you dominate matches.",
+    "Frequent Updates" : "Ensure compatibility with the latest Fortnite updates, maintaining uninterrupted access to all features.",
+  },
   },
   {
     id: "f-3",
@@ -137,6 +298,31 @@ export const fortnite = [
     price: 15.99,
     sold: 59,
     rate: 3.9,
+    variants: [
+      {
+        title: "Onyx Full - DAY[STRIPE/PAYPAL/LTC]",
+        subtitle: "EasyAntiCheat BYPASS",
+        stock: 13,
+        price: 7.99,
+      },
+      {
+        title: "Onyx Full - WEEK[STRIPE/PAYPAL/LTC]",
+        subtitle: "EasyAntiCheat BYPASS",
+        stock: 63,
+        price: 45.00,
+      },
+      {
+        title: "Onyx Full - MONTH[STRIPE/PAYPAL/LTC]",
+        subtitle: "EasyAntiCheat BYPASS",
+        stock: 100,
+        price: 79.00,
+      },
+    ],
+  description: {
+    "Aim" : "Enable Aimbot, Aim trap, X Speed, Y Speed, Aiming Range, Hitbox, Aim Hotkey",
+    "Visuals" : "Box ESP, Show line, Show Health, Show Range, Show Head, Show Holding, Show Skill/Trap, Show Teammate, Show warning, Radar ESP, Show bones, Show rank",
+    "Triggerbot" : "Enable triggerbot, Trigger Delay, Triger Hotkey",
+  },
   },
   {
     id: "f-4",
@@ -148,6 +334,37 @@ export const fortnite = [
     price: 18.99,
     sold: 15,
     rate: 4.9,
+    variants: [
+      {
+        title: "Stern - DAY[STRIPE/PAYPAL/LTC]",
+        subtitle: "EasyAntiCheat BYPASS",
+        stock: 56,
+        price: 3.99,
+      },
+      {
+        title: "Stern - WEEK[STRIPE/PAYPAL/LTC]",
+        subtitle: "EasyAntiCheat BYPASS",
+        stock: 5,
+        price: 12.00,
+      },
+      {
+        title: "Stern - MONTH[STRIPE/PAYPAL/LTC]",
+        subtitle: "EasyAntiCheat BYPASS",
+        stock: 19,
+        price: 32.00,
+      },
+      {
+        title: "Stern - LFT[STRIPE/PAYPAL/LTC]",
+        subtitle: "EasyAntiCheat BYPASS",
+        stock: 1005,
+        price: 129.99,
+      },
+    ],
+  description: {
+    "Aim" : "Aimbot (Aim Assist), Prediction, Visible Check, Aim key, Smooth Settings, Fov Settings, Circle FOV, Max Distance, Delay Settings",
+    "Visuals" : "Skeleton ESP, Player Box ESP, Player Distance, Show Bots, Player Weapon, Layered Box, Player Line, Visible Check, Set Maximum Distance, Radar",
+    "Loot" : "World Resource, Vehicle, Chest, Ammo, Trap, Max Distance",
+  },
   },
 ];
 
@@ -206,6 +423,34 @@ export const league = [
     price: 1.99,
     sold: 5398,
     rate: 4.1,
+    variants: [
+      {
+        title: "TOIR - DAY[STRIPE/PAYPAL/LTC]",
+        subtitle: "VG BYPASS",
+        stock: 1005,
+        price: 2.99,
+      },
+      {
+        title: "TOIR - WEEK[STRIPE/PAYPAL/LTC]",
+        subtitle: "VG BYPASS",
+        stock: 509,
+        price: 10.00,
+      },
+      {
+        title: "TOIR - MONTH[STRIPE/PAYPAL/LTC]",
+        subtitle: "VG BYPASS",
+        stock: 390,
+        price: 24.99,
+      }
+    ],
+  description: {
+    "Auto-Dodge" : "Outmaneuver your opponents with lightning-fast reflexes, effortlessly evading every attack.",
+    "Prediction" : "Ensure every attack lands with unerring accuracy, thanks to predictive movement algorithms.",
+    "Support for All Champions" : "Dominate with any of 160+ supported champions, unleashing devastating auto combos and advanced strategies.",
+    "Woke" : "We provide comprehensive assistance for every situation, from map awareness to objective tracking.",
+    "Assistant" : "Equipped with a diverse toolkit, including Magnetic Ward, Activator, Auto-Leveler, and many more.",
+    "Skin Mods" : "Freely choose any in-game skin, complete with all chromas and additional options, to personalize your appearance.",
+  },
   },
   {
     id: "lol-3",
@@ -217,6 +462,34 @@ export const league = [
     price: 8.99,
     sold: 105,
     rate: 3.5,
+    variants: [
+      {
+        title: "Hanbot - DAY[STRIPE/PAYPAL/LTC]",
+        subtitle: "VG BYPASS + Inbuilt Spoofer",
+        stock: 10,
+        price: 6.99,
+      },
+      {
+        title: "Hanbot - WEEK[STRIPE/PAYPAL/LTC]",
+        subtitle: "VG BYPASS + Inbuilt Spoofer",
+        stock: 15,
+        price: 24.99,
+      },
+      {
+        title: "Hanbot - MONTH[STRIPE/PAYPAL/LTC]",
+        subtitle: "VG BYPASS + Inbuilt Spoofer",
+        stock: 3,
+        price: 45.00,
+      }
+    ],
+  description: {
+    "Kiting" : "Automates attack and movement sequences to maximize damage output while minimizing incoming damage.",
+    "Auto-Smite" : "Automatically uses Smite on jungle objectives when they reach a certain health threshold.",
+    "Jungle Tracking/Objective Control" : "Helps track jungle timers and suggests optimal times to secure objectives.",
+    "Information Overlay" : "Provides real-time analysis of the game state, highlighting potential threats, opportunities, and optimal plays.",
+    "Macro Play" : "Equipped with a diverse toolkit, including Magnetic Ward, Activator, Auto-Leveler, and many more.",
+    "Skin Mods" : "Allows for more complex and customizable combo execution, and offers suggestions for macro play.",
+  },
   },
 ];
 
@@ -231,6 +504,30 @@ export const roblox = [
     price: 21.99,
     sold: 847,
     rate: 4.9,
+    variants: [
+      {
+        title: "Wave - 3 DAYS[STRIPE/PAYPAL/LTC]",
+        subtitle: "Undetected by Byfron",
+        stock: 69,
+        price: 9.99,
+      },
+      {
+        title: "Wave - WEEK[STRIPE/PAYPAL/LTC]",
+        subtitle: "Undetected by Byfron",
+        stock: 27,
+        price: 14.99,
+      },
+      {
+        title: "Wave - MONTH[STRIPE/PAYPAL/LTC]",
+        subtitle: "Undetected by Byfron",
+        stock: 73,
+        price: 44.99,
+      }
+    ],
+  description: {
+    "Lua Executor" : "Elevate your Roblox experience by triggering, manipulating the script of the game in real-time.",
+    "Dumper" : "Know how the game was built and how the scripts work by dumping all the resources into your computer.",
+  },
   },
   {
     id: "r-2",
@@ -242,6 +539,24 @@ export const roblox = [
     price: 15.99,
     sold: 1975,
     rate: 4.9,
+    variants: [
+      {
+        title: "Wave - WEEK[STRIPE/PAYPAL/LTC]",
+        subtitle: "Anti-Byfron",
+        stock: 45,
+        price: 14.99,
+      },
+      {
+        title: "Wave - MONTH[STRIPE/PAYPAL/LTC]",
+        subtitle: "Anti-Byfron",
+        stock: 109,
+        price: 29.99,
+      }
+    ],
+  description: {
+    "Lua Executor" : "Edit scripts of any experiences in your computer, gaining an absurd advantage over normal players.",
+    "Account Spoof" : "Never get banned by the banwave ever gain by hiding your account identification when using the executor.",
+  },
   },
   {
     id: "r-3",
@@ -267,6 +582,37 @@ export const pubg = [
     price: 17.99,
     sold: 98,
     rate: 4.9,
+    variants: [
+      {
+        title: "Stern - DAY[STRIPE/PAYPAL/LTC]",
+        subtitle: "Intel/AMD",
+        stock: 1005,
+        price: 3.99,
+      },
+      {
+        title: "Stern - WEEK[STRIPE/PAYPAL/LTC]",
+        subtitle: "Intel/AMD",
+        stock: 509,
+        price: 10.00,
+      },
+      {
+        title: "Stern - MONTH[STRIPE/PAYPAL/LTC]",
+        subtitle: "Intel/AMD",
+        stock: 390,
+        price: 24.99,
+      },
+      {
+        title: "Stern - LIFETIME[STRIPE/PAYPAL/LTC]",
+        subtitle: "Intel/AMD",
+        stock: 390,
+        price: 169.99,
+      }
+    ],
+  description: {
+    "Aim" : "Aimbot, Visible check, Aim key, Smooth settings, Fov settings, Prediction",
+    "Visual" : "Skeleton, Health Bar, Distance ESP, Radar, Heal, Helmet, Melee, Attach Weapon, Deathdrop, Vehicle ESP, Player ESP, Show eyes directions, Tracers, Armor, Boost, Weapon, Ammo, Backpack, Airdrop ",
+    "Misc" : "Spectator count, Streamproof, Support 24/7, Color Picker",
+  },
   },
 ];
 
