@@ -57,7 +57,7 @@ function renderCards(cards) {
       `;
     container.appendChild(cardElement);
     document.getElementById(id).onclick = function () {
-      window.location.href = `pages/product.html?id=${card.id}`;
+      window.location.href = `product.html?id=${card.id}`;
     }
     id += 1
   });
