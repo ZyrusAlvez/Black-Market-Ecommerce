@@ -1,4 +1,4 @@
-import * as data from "../data.js";
+import * as data from "data.js";
 
 // for aside menu
 document.getElementById("menu-toggle").addEventListener("click", function () {
