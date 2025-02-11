@@ -37,6 +37,10 @@ html {
   }
 }
 
+.cart-item {
+  transition: transform 0.3s ease;
+}
+
 /* Conveyor Effect  */
 @keyframes scroll {
   0% { transform: translateX(0); }
@@ -51,7 +55,7 @@ html {
 .conveyor-track {
   display: flex;
   animation: scroll 12s linear infinite;
-  width: 220%; /* Ensures seamless looping */
+  width: 200%; /* Ensures seamless looping */
 }
 
 .truncate-text {

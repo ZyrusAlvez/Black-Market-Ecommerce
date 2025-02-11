@@ -10,7 +10,7 @@ const ids = [
   "others",
 ];
 
-renderCards(data.minecraft);
+
 document.getElementById(ids[0]).style.backgroundColor = "#FFA500";
 ids.forEach((id) => {
   document.getElementById(id).classList.add("clickable-item");
@@ -29,16 +29,19 @@ ids.forEach((id) => {
   };
 });
 
+let id = 1
+renderCards(data.minecraft);
 function renderCards(cards) {
   const container = document.getElementById("cardContainer");
   container.innerHTML = ""; // Clear previous content
 
   cards.forEach((card) => {
     const cardElement = document.createElement("div");
+    cardElement.id = id
     cardElement.className =
       "h-auto w-full border-gray-700 border-[1px] rounded-2xl flex flex-col font-roboto justify-center p-2 md:flex-row md:items-center md:gap-4 md:justify-between";
     cardElement.innerHTML = `
-          <img src="${card.img}" class="w-full h-[150px] object-cover rounded-2xl md:w-[250px] md:h-full bg-yellow-800" />
+          <img src="${card.img}" class="w-full h-[150px] object-cover rounded-2xl md:w-[250px] md:h-full" />
           <div class="flex flex-col gap-2 mt-2 w-full h-full md:flex-row">
             <div class="flex flex-col gap-2 justify-evenly">
               <h1 class="font-bold text-xl md:text-2xl">${card.title}</h1>
@@ -52,10 +55,93 @@ function renderCards(cards) {
           </div>
       `;
     container.appendChild(cardElement);
+    document.getElementById(id).onclick = function () {
+      window.location.href = `pages/product.html?id=${card.id}`;
+    }
+    id += 1
   });
 }
 
 
+// script for cart functions
+document.addEventListener('DOMContentLoaded', function() {
+  const cartButton = document.getElementById('cartButton');
+  const cartModal = document.getElementById('cartModal');
+  const closeCart = document.getElementById('closeCart');
+  const modalContent = cartModal.querySelector('.transform');
+
+  cartButton.addEventListener('click', () => {
+    cartModal.classList.remove('hidden');
+    setTimeout(() => {
+      modalContent.classList.remove('translate-x-full');
+    }, 10);
+  });
+
+  function closeModal() {
+    modalContent.classList.add('translate-x-full');
+    setTimeout(() => {
+      cartModal.classList.add('hidden');
+    }, 0);
+  }
+
+  closeCart.addEventListener('click', closeModal);
+  cartModal.addEventListener('click', (e) => {
+    if (e.target === cartModal) {
+      closeModal();
+    }
+  });
+
+  document.getElementById('cartItems').addEventListener('click', function(e) {
+    const removeButton = e.target.closest('.remove-item');
+    if (removeButton) {
+      const cartItem = removeButton.closest('.rounded-lg');
+      const itemHeight = cartItem.offsetHeight;
+      const nextItems = Array.from(cartItem.nextElementSibling ? cartItem.parentElement.children : [])
+        .slice(Array.from(cartItem.parentElement.children).indexOf(cartItem) + 1);
+      
+      cartItem.style.opacity = '0';
+      cartItem.style.transform = 'translateX(100px)';
+      cartItem.style.transition = 'all 0.3s ease';
+      
+      nextItems.forEach(item => {
+        item.classList.add('cart-item');
+        requestAnimationFrame(() => {
+          item.style.transform = `translateY(-${itemHeight + 16}px)`;
+        });
+      });
+      
+      setTimeout(() => {
+        cartItem.remove();
+        nextItems.forEach(item => {
+          item.style.transition = 'none';
+          item.style.transform = 'translateY(0)';
+          item.offsetHeight;
+          item.style.transition = 'transform 0.3s ease';
+        });
+        updateTotal();
+      }, 300);
+    }
+  });
+
+  function updateTotal() {
+    const prices = Array.from(document.querySelectorAll('#cartItems .text-white'))
+      .map(span => {
+        const price = span.textContent.replace('$', '');
+        return parseFloat(price) || 0;
+      })
+      .filter(price => !isNaN(price));
+    
+    const total = prices.reduce((sum, price) => sum + price, 0);
+    const formattedTotal = new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD'
+    }).format(total);
+    
+    document.getElementById('cartTotal').textContent = formattedTotal;
+  }
+
+  updateTotal();
+});
 
 
 // particles.js configuration
