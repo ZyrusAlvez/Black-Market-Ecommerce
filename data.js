@@ -270,8 +270,14 @@ export const pubg = [
   },
 ];
 
+export const others = [
+  {
+
+  },
+]
+
 const allCards = [
-  pubg, roblox, league, fortnite, valorant, minecraft
+  pubg, roblox, league, fortnite, valorant, minecraft, others
 ]
 
 export const all = allCards.flat();
