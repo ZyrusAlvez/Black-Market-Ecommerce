@@ -705,7 +705,8 @@ export const others = [
   {
     id: "Zenless",
     title: "Resource Generator/Client",
-    img: "assets/RESOURCE_CLIENT.png",
+    img: "assets/ZENLESS_CHEAT2.png",
+    gallery: ["assets/ZENLESS_CHEAT.png"],
     subtitle:
       "Resource Generators/Client allows players to gain unlimited in-game currency and materials. It allows players to quickly purchase items and upgrade characters without the usual grind.",
     stock: 26,
@@ -740,7 +741,8 @@ export const others = [
   {
     id: "Honkai",
     title: "Infinite Stamina",
-    img: "assets/INFINITE_LOGO.png",
+    img: "assets/HONKAI_CHEAT2.png",
+    gallery: ["assets/HONKAI_CHEAT.png"],
     subtitle:
       "Infinite Stamina provides this cheat unlimited stamina, allowing players to explore and battle continuously without waiting for regeneration. It facilitates faster progression and resource gathering.",
     stock: 54,
@@ -762,7 +764,8 @@ export const others = [
   {
     id: "COD",
     title: "Infinite Ammo",
-    img: "assets/INFINITE_AMMO.png",
+    img: "assets/COD_HACK.png",
+    gallery: ["assets/COD_UNLI.png"],
     subtitle:
       "This cheat grants players unlimited ammunition for their weapons, eliminating the need to reload. Players can fire continuously without worrying about running out of bullets, which enhances combat effectiveness in both multiplayer and single-player modes.",
     stock: 20,
