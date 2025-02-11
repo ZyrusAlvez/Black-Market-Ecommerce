@@ -66,7 +66,7 @@ export const valorant = [
     id: "v-1",
     title: "Dullwave",
     img: "/assets/Valorant/DullWave.png",
-    gallery: ["/assets/Minecraft/dull.png"],
+    gallery: ["/assets/Valorant/dull.png"],
     subtitle:
       "Dominate Valorant with DULLWAVE, the cheat that transforms your gameplay.  Unlock your full potential and become a top agent with DULLWAVE's powerful features and easy-to-use interface, giving you the edge you need to win.",
     stock: 30,
@@ -106,7 +106,7 @@ export const valorant = [
     id: "v-2",
     title: "Onyx Lite — Valorant",
     img: "/assets/Valorant/Onyx_Lite.png",
-    gallery: ["/assets/Minecraft/onyxl.png"],
+    gallery: ["/assets/Valorant/onyxl.png"],
     subtitle:
       "Elevate your Valorant gameplay with Onyx Lite. This streamlined cheat focuses on essential features, providing powerful ESP (Extra Sensory Perception) tools to give you battlefield awareness without impacting performance.  Perfect for both casual and competitive players, Onyx Lite offers the simplicity and effectiveness you need to succeed.Elevate your Valorant gameplay with Onyx Lite. This streamlined cheat focuses on essential features, providing powerful ESP (Extra Sensory Perception) tools to give you battlefield awareness without impacting performance.  Perfect for both casual and competitive players, Onyx Lite offers the simplicity and effectiveness you need to succeed.",
     stock: 23,
@@ -145,7 +145,7 @@ export const valorant = [
     id: "v-3",
     title: "Onyx Full — Valorant",
     img: "/assets/Valorant/Onyx_Full.png",
-    gallery: ["/assets/Minecraft/onyxf.png"],
+    gallery: ["/assets/Valorant/onyxf.png"],
     subtitle:
       "Enhance your Valorant gameplay with Onyx Full. This powerful cheat is designed for players who demand the best, offering customizable aimbot, enhanced ESP visuals, and robust anti-cheat protection. Whether you're grinding ranked or playing casually, Onyx gives you the edge to win.",
     stock: 15,
@@ -184,7 +184,7 @@ export const valorant = [
     id: "v-4",
     title: "Stern — Valorant",
     img: "/assets/Valorant/Stern.png",
-    gallery: ["/assets/Minecraft/ster.png"],
+    gallery: ["/assets/Valorant/ster.png"],
     subtitle:
       "Looking for the ultimate gaming experience? Look no further! At STERN, we specialize in enhancing your gameplay affordably. Whether you're a casual gamer or a competitive player, our diverse range of game enhancement solutions is designed to meet your needs. Explore our offerings today, including aimbot to sharpen your accuracy for a competitive edge; ESP and wallhack to gain strategic insights by seeing through game environments; radar hacks to keep track of your opponents’ movements; and unlock cheats to access higher-tier in-game items effortlessly. Discover the variety of packages we offer and elevate your gameplay with STERN!",
     stock: 59,
@@ -224,7 +224,7 @@ export const fortnite = [
     id: "f-1",
     title: "Disconnect",
     img: "/assets/Fortnite/Disconnect.png",
-    gallery: ["/assets/Minecraft/disconnec.png"],
+    gallery: ["/assets/Fortnite/disconnec.png"],
     subtitle:
       "Experience Fortnite like never before with Disconnect, the ultimate external tool.  Enjoy advanced features including aimbot, ESP, and weapon mods, all while remaining safe, undetected, and stream-proof. Play smarter, not harder, with Disconnect Fortnite External.",
     stock: 105,
@@ -263,7 +263,7 @@ export const fortnite = [
     id: "f-2",
     title: "Onyx Lite — Fortnite",
     img: "/assets/Fortnite/Onyx_Lite.png",
-    gallery: ["/assets/Minecraft/onyxl.png"],
+    gallery: ["/assets/Fortnite/onyxl.png"],
     subtitle:
       "Elevate your Fortnite gameplay with Onyx Lite. This streamlined cheat focuses on essential features, providing powerful ESP (Extra Sensory Perception) tools to give you battlefield awareness without impacting performance.  Perfect for both casual and competitive players, Onyx Lite offers the simplicity and effectiveness you need to succeed.Elevate your Valorant gameplay with Onyx Lite. This streamlined cheat focuses on essential features, providing powerful ESP (Extra Sensory Perception) tools to give you battlefield awareness without impacting performance.  Perfect for both casual and competitive players, Onyx Lite offers the simplicity and effectiveness you need to succeed.",
     stock: 30,
@@ -302,7 +302,7 @@ export const fortnite = [
     id: "f-3",
     title: "Onyx Full — Fortnite",
     img: "/assets/Fortnite/Onyx_Full.png",
-    gallery: ["/assets/Minecraft/onyxf.png"],
+    gallery: ["/assets/Fortnite/onyxf.png"],
     subtitle:
       "Enhance your Fortnite gameplay with Onyx Full. This powerful cheat is designed for players who demand the best, offering customizable aimbot, enhanced ESP visuals, and robust anti-cheat protection. Whether you're grinding ranked or playing casually, Onyx gives you the edge to win.",
     stock: 34,
@@ -339,7 +339,7 @@ export const fortnite = [
     id: "f-4",
     title: "Stern — Fortnite",
     img: "/assets/Fortnite/Stern.png",
-    gallery: ["/assets/Minecraft/ster.png"],
+    gallery: ["/assets/Fortnite/ster.png"],
     subtitle:
       "Looking for the ultimate gaming experience? Look no further! At STERN, we specialize in enhancing your gameplay affordably. Whether you're a casual gamer or a competitive player, our diverse range of game enhancement solutions is designed to meet your needs. Explore our offerings today, including aimbot to sharpen your accuracy for a competitive edge; ESP and wallhack to gain strategic insights by seeing through game environments; radar hacks to keep track of your opponents’ movements; and unlock cheats to access higher-tier in-game items effortlessly. Discover the variety of packages we offer and elevate your gameplay with STERN!",
     stock: 32,
@@ -429,7 +429,7 @@ export const league = [
     id: "lol-2",
     title: "Toir Script",
     img: "/assets/League/Toir.png",
-    gallery: ["/assets/Minecraft/toi.png"],
+    gallery: ["/assets/League/toi.png"],
     subtitle:
       "Enhance your gameplay with ESP, displaying wards, traps, tower radii, forest camp timers, and champion clones, along with camera zoom and gang warnings.  Auto features support all champions, securing targets, last hitting creeps, activating items, and executing complex combos like Insec and Keyblade.  Miscellaneous features include flexible skill customization, forest clearing setup, anti-AFK, and fake clicks.",
     stock: 1001,
@@ -469,7 +469,7 @@ export const league = [
     id: "lol-3",
     title: "Hanbot Script",
     img: "/assets/League/Hanbot.png",
-    gallery: ["/assets/Minecraft/hanbo.png"],
+    gallery: ["/assets/League/hanbo.png"],
     subtitle:
       "The Hanbot Script is arguably the most recognized cheat within the League of Legends scripting community, boasting support for nearly every champion.  If you thrive on the challenge and competition of League of Legends, you understand the dedication required to master your champion, coordinate with your team, and outsmart your opponents.  But imagine enhancing your gameplay and enjoyment with a tool that could give you a competitive edge and accelerate your climb up the ranks.",
     stock: 509,
@@ -512,7 +512,7 @@ export const roblox = [
     id: "r-1",
     title: "Wave Executor",
     img: "/assets/Roblox/Wave_Executor.png",
-    gallery: ["/assets/Minecraft/wave.png"],
+    gallery: ["/assets/Roblox/wave.png"],
     subtitle:
       "Experience the pinnacle of scripting with Wave. Our top-tier UI and optimized performance will transform your workflow, offering unparalleled ease of use and unlocking new creative possibilities.",
     stock: 1001,
@@ -548,7 +548,7 @@ export const roblox = [
     id: "r-2",
     title: "Cryptic Executor",
     img: "/assets/Roblox/Cryptic_Executor.png",
-    gallery: ["/assets/Minecraft/cryptic.png"],
+    gallery: ["/assets/Roblox/cryptic.png"],
     subtitle:
       "Cryptic Executor simplifies Roblox exploit execution on Android.  This free and easy-to-use application allows simultaneous script execution without any cost.  It's also lightweight, requiring less memory than most games.",
     stock: 12879,
@@ -578,7 +578,7 @@ export const roblox = [
     id: "r-3",
     title: "Aztup Hub",
     img: "/assets/Roblox/Aztup_Hub.png",
-    gallery: ["/assets/Minecraft/aztup.png"],
+    gallery: ["/assets/Roblox/aztup.png"],
     subtitle:
       "Aztup Hub empowers Roblox players with a comprehensive suite of tools designed to elevate their gameplay.  It provides a range of features, from enhancing existing game mechanics to introducing entirely new possibilities.  These features often include customizable options, allowing players to tailor their experience to their specific needs and playstyles.  Automation tools further streamline gameplay by automating repetitive tasks, freeing up players to focus on more engaging aspects of the game.  Essentially, Aztup Hub aims to give players more control over their Roblox experience, whether they're looking for a competitive edge, creative tools, or simply a more convenient way to play.",
     stock: 578,
@@ -593,7 +593,7 @@ export const pubg = [
     id: "pubg-1",
     title: "Stern — PUBG",
     img: "/assets/Pubg/Stern.png",
-    gallery: ["/assets/Minecraft/ster.png"],
+    gallery: ["/assets/PUBG/ster.png"],
     subtitle:
       "Looking for the ultimate gaming experience? Look no further! At STERN, we specialize in enhancing your gameplay affordably. Whether you're a casual gamer or a competitive player, our diverse range of game enhancement solutions is designed to meet your needs. Explore our offerings today, including aimbot to sharpen your accuracy for a competitive edge; ESP and wallhack to gain strategic insights by seeing through game environments; radar hacks to keep track of your opponents’ movements; and unlock cheats to access higher-tier in-game items effortlessly. Discover the variety of packages we offer and elevate your gameplay with STERN!",
     stock: 53,
