@@ -25,16 +25,20 @@ if (product) {
   document.getElementById('product-details').innerText = "Product not found.";
 }
 
+const ids = []
 renderCards(product?.variants);
 
 function renderCards(cards) {
   const container = document.getElementById("variants-div");
   container.innerHTML = "";
-
+  let id = 1
   cards.forEach((card) => {
     const cardElement = document.createElement("div");
+    cardElement.id = id
+    ids.push(id)
+    id += 1
     cardElement.className =
-      "h-auto rounded-lg flex flex-col font-roboto border-[1px] w-full p-4";
+      "h-auto rounded-lg flex flex-col font-roboto border-[1px] w-full p-4 border-gray-700 cursor-pointer";
     cardElement.innerHTML = `
         <h1>${card.title}</h1>
         <p>${card.subtitle}</p>
@@ -47,6 +51,16 @@ function renderCards(cards) {
     container.appendChild(cardElement);
   });
 }
+
+document.getElementById(ids[0]).style.borderColor = "#FFA500"
+ids.forEach((id) => {
+  document.getElementById(id).onclick = function () {
+    ids.forEach((resetId) => {
+      document.getElementById(resetId).style.borderColor = "#616161";
+    });
+    document.getElementById(id).style.borderColor = "#FFA500";
+  };
+});
 
 console.log(product)
 renderDescription(product.description);
