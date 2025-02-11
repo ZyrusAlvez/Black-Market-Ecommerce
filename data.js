@@ -10,6 +10,21 @@ export const minecraft = [
     price: 15.99,
     sold: 15,
     rate: 4.8,
+    variants: [
+      {
+        title: "Lunar - LFT[STRIPE/PAYPAL/LTC]",
+        subtitle: "AntiCheat Bypass",
+        stock: 3,
+        price: 29.99,
+      },
+    ],
+  description: {
+    "Single Install" : "Say goodbye to the hassle of manually installing and updating your mods. Lunar Client is an all-in-one modpack that automatically includes and updates all your favorite mods. It supports all the latest versions of Minecraft: Java Edition, including 1.21 'Tricky Trials,' as well as 1.20, 1.19, 1.18, 1.17, 1.16, 1.12, 1.8, and 1.7. Additionally, Lunar Client updates with the latest Minecraft releases, ensuring you can jump into the newest versions with all of your favorite mods as soon as they’re released!",
+    "Countless Mods" : "Lunar Client offers over 65 customizable mods and hundreds of settings to enhance your Minecraft experience. Our mods are suited for every type of player, whether you're into PvP, Skyblock, or anything else. Some of the mods we offer include Keystrokes, Coordinates, Freelook, and Toggle Sprint—each crafted to make your gameplay smoother and more enjoyable.",
+    "Boosted Frames" : "Thanks to our talented developers, Lunar Client offers cutting-edge performance enhancements, often doubling your frame rate—even on low-end PCs. These optimizations are built right into the client, and with the use of optional modules utilizing 3rd party mods like Sodium or OptiFine, you can push performance even further. Additionally, Lunar Client has various in-game settings like Full Bright, Optimized Chunk Loading, and Entity Rendering to make your Minecraft experience smoother and faster than ever before.",
+    "Multios Support" : "Lunar Client supports all of the major operating systems including Windows, Linux, and macOS. We offer 64-bit for Windows 10 and above, as well as Intel and Apple Silicon variants for any macOS version above Sierra. The Linux version is packaged as an AppImage which supports the major Linux distributions including Ubuntu, Debian, Fedora, Arch, and more.",
+
+  },
   },
   {
     id: "mc-2",
@@ -22,6 +37,20 @@ export const minecraft = [
     price: 13.99,
     sold: 25,
     rate: 4,
+    variants: [
+      {
+        title: "Feather - LFT[STRIPE/PAYPAL/LTC]",
+        subtitle: "AntiCheat Bypass",
+        stock: 21,
+        price: 39.99,
+      },
+    ],
+  description: {
+    "Get an FPS Boost" : "Improve your Minecraft performance through our built-in performance enhancements or various third-party performance boosting mods!",
+    "Add own mods" : "Missing a mod built-in? Add your own Forge or Fabric mod directly into our launcher. Feather let's you easily manage and toggle each mod.",
+    "Built-in voice chat" : "Playing SMP with your friends or want to speak with other Feather players? Feather has built-in voice chat to speak with all Feather users!",
+    "Host your server for free" : "No longer need to pay for Minecraft hosting, Feather allows you to host a Minecraft server completely for FREE off your PC! Servers are ran directly off your PC and your IP address is protected via our proxy network.",
+  },
   },
   {
     id: "mc-3",
@@ -34,6 +63,18 @@ export const minecraft = [
     price: 11.99,
     sold: 105,
     rate: 4.9,
+    variants: [
+      {
+        title: "Badlion - LFT[STRIPE/PAYPAL/LTC]",
+        subtitle: "AntiCheat Bypass",
+        stock: 42,
+        price: 49.99,
+      },
+    ],
+  description: {
+    "Best Features" : "Highest FPS Boost, 1500 fps highest recording, Largest Mod Selections, and supports all popular versions.",
+
+  },
   },
   {
     id: "mc-4",
@@ -46,6 +87,19 @@ export const minecraft = [
     price: 3.99,
     sold: 502,
     rate: 1.2,
+    variants: [
+      {
+        title: "Labymod - LFT[STRIPE/PAYPAL/LTC]",
+        subtitle: "AntiCheat Bypass",
+        stock: 53,
+        price: 59.99,
+      },
+    ],
+  description: {
+    "Incredible performance" : "Freezes, lags, and poor FPS are a thing of the past. With LabyMod you will achieve the best performance and make your game feel smoother than ever before.",
+    "Your game. Your style." : "It's up to you! Switch between a stunning, modern theme in high resolution or the classic and iconic Minecraft style at any time.",
+    "Up to datein a few seconds" : "We have built LabyMod 4 in a way that it can be updated to new Minecraft versions in seconds. When you see the announcement of a new snapshot, LabyMod may already be available before you even finish reading Mojang's changelog!",
+  },
   },
   {
     id: "mc5",
@@ -58,8 +112,20 @@ export const minecraft = [
     price: 99.99,
     sold: 5,
     rate: 4.9,
+    variants: [
+      {
+        title: "Meteor - LFT[STRIPE/PAYPAL/LTC]",
+        subtitle: "AntiCheat Bypass",
+        stock: 12,
+        price: 69.99,
+      },
+    ],
+  description: {
+    "Best Anticheat" : "Play uninterrupted without the worry of getting your account banned!",
+  },
   },
 ];
+
 
 export const valorant = [
   {
