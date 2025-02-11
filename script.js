@@ -26,6 +26,7 @@ ids.forEach((id) => {
     id === ids[3] && renderCards(data.league);
     id === ids[4] && renderCards(data.roblox);
     id === ids[5] && renderCards(data.pubg);
+    id === ids[6] && renderCards(data.others);
   };
 });
 
