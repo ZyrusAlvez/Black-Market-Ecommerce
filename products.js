@@ -1,4 +1,4 @@
-import * as data from "data.js";
+import * as data from "./data.js";
 
 // for aside menu
 document.getElementById("menu-toggle").addEventListener("click", function () {
@@ -12,7 +12,7 @@ document.getElementById("close-menu").addEventListener("click", function () {
   asideContainer.classList.remove("aside-visible");
   asideContainer.classList.add("aside-hidden");
 });
-
+console.log("dwadw")
 let currentCategory = "All";
 
 const classes = [
