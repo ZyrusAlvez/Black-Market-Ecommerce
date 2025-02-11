@@ -592,7 +592,7 @@ export const pubg = [
   {
     id: "pubg-1",
     title: "Stern — PUBG",
-    img: "assets/Pubg/Stern.png",
+    img: "assets/PUBG/Stern.png",
     gallery: ["assets/PUBG/ster.png"],
     subtitle:
       "Looking for the ultimate gaming experience? Look no further! At STERN, we specialize in enhancing your gameplay affordably. Whether you're a casual gamer or a competitive player, our diverse range of game enhancement solutions is designed to meet your needs. Explore our offerings today, including aimbot to sharpen your accuracy for a competitive edge; ESP and wallhack to gain strategic insights by seeing through game environments; radar hacks to keep track of your opponents’ movements; and unlock cheats to access higher-tier in-game items effortlessly. Discover the variety of packages we offer and elevate your gameplay with STERN!",
