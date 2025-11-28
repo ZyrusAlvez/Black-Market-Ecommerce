@@ -636,13 +636,39 @@
         </div>
       </div>
     </div>  
-  </body>
+  <!-- particles.js container -->
+  <div id="particles-js"></div>
 
   <!-- particle.js background -->
-  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- External JavaScript -->
-  <script  type="module" src="script.js"></script>
   
+  <script>
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 50 },
+        color: { value: '#FFA500' },
+        shape: { type: 'circle' },
+        opacity: { value: 0.3 },
+        size: { value: 2 },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: '#FFA500',
+          opacity: 0.2,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 2
+        }
+      }
+    });
+  </script>
+  
+  <!-- External JavaScript -->
+  <script type="module" src="script.js"></script>
+  
+</body>
 </html>
